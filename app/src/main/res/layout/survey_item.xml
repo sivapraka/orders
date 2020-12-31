@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/space_2"
+    app:cardCornerRadius="@dimen/space_3"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/itemLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/space_5"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5">
+
+        <TextView
+            android:id="@+id/qatextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_14"
+            style="@style/brandon_reg"
+            android:textColor="@color/text_color"
+            android:layout_toLeftOf="@id/statusTextView" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            style="@style/brandon_reg"
+            android:paddingHorizontal="@dimen/space_5"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusTextView"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:textSize="@dimen/space_12"
+            android:paddingHorizontal="@dimen/space_3"
+            style="@style/brandon_reg"
+            android:textColor="@color/colorLightGray"
+            android:layout_marginTop="@dimen/space_10" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

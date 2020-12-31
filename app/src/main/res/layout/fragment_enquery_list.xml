@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorNormalBackground">
+
+    <RadioGroup
+        android:id="@+id/orderradioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checkedButton="@+id/orderradioButtonAllBills"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <RadioButton
+            android:id="@+id/orderradioButtonAllBills"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/allOrders"
+            android:textColor="@color/colorWhite" />
+
+        <RadioButton
+            android:id="@+id/orderradioButtonCancelBills"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/cancelOrders"
+            android:textColor="@color/colorBlack" />
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/orderradioGroup">
+
+        <TextView
+            android:id="@+id/ordertextViewBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginBottom="@dimen/space_10"
+            android:gravity="center"
+            android:padding="@dimen/space_5"
+            android:text="@string/totalNoOrders"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ordertextViewTotalBills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_toEndOf="@id/ordertextViewBill"
+            android:background="@color/colorGreen"
+            android:gravity="center"
+            android:minWidth="@dimen/space_30"
+            android:padding="@dimen/space_5"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/space_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ordertextViewBillValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_toLeftOf="@id/ordertextViewTotalBillValue"
+            android:gravity="center"
+            android:padding="@dimen/space_5"
+            android:text="@string/totalBillValue"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_12"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ordertextViewTotalBillValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginBottom="@dimen/space_10"
+            android:background="@color/colorGreen"
+            android:gravity="center"
+            android:padding="@dimen/space_5"
+            android:text="@string/noBillOn"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/space_12"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeReferesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEnquiryList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayoutTotal"
+        android:layout_marginTop="5dp"
+        android:layout_above="@id/queryAdd"
+        android:layout_marginBottom="@dimen/space80"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/ordertextViewNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/space_10"
+        android:gravity="center"
+        android:padding="@dimen/space_5"
+        android:text="@string/noOrderOn"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/space_12"
+        android:visibility="gone" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/queryAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:layout_above="@+id/floattxt"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/add"
+        app:backgroundTint="@color/newColorPrimary"
+        tools:ignore="UnknownId" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/floattxt"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

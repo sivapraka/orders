@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/space_5"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="edgfdfdnhfdnfngngfng"
+        android:layout_toLeftOf="@id/toatalQuantity"
+        android:minWidth="@dimen/space_50"
+        android:layout_marginRight="@dimen/space_20"
+        android:maxWidth="@dimen/space_500"
+       />
+
+    <TextView
+        android:id="@+id/toatalQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:minWidth="@dimen/space_30"
+        android:maxWidth="@dimen/space_50"
+        android:layout_toLeftOf="@id/sold"
+        android:text="sd"
+        android:layout_marginRight="@dimen/space_20"
+        />
+
+    <TextView
+        android:id="@+id/sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:minWidth="@dimen/space_30"
+        android:maxWidth="@dimen/space_50"
+        android:layout_toLeftOf="@id/replace"
+        android:text="sfsf"
+        android:layout_marginRight="@dimen/space_30"
+        />
+    <TextView
+        android:id="@+id/replace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="sfsd"
+        android:minWidth="@dimen/space_30"
+        android:maxWidth="@dimen/space_50"
+        android:layout_toLeftOf="@id/balance"
+        android:layout_marginRight="@dimen/space_20"
+        />
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:minWidth="@dimen/space_30"
+        android:maxWidth="@dimen/space_50"
+        android:text="53"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/space_10"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/colorNormalBackground"
+        android:layout_below="@+id/balance"
+        android:layout_marginTop="@dimen/space_5"
+        />
+
+</RelativeLayout>

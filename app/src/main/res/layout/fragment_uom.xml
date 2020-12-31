@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutBottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorNormalBackground"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardViewDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginRight="@dimen/space_30"
+        app:cardUseCompatPadding="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/newColorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_30"
+            android:layout_marginTop="@dimen/space_30">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewUOMName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopLarge"
+                android:background="@drawable/background_normal"
+                android:hint="@string/uom_name"
+                android:imeOptions="actionNext"
+                android:inputType="text|textFilter|textAutoComplete|textAutoCorrect|textPersonName"
+                android:maxLength="@integer/max_length_large"
+                android:layout_marginEnd="@dimen/space_30"
+                android:layout_marginStart="@dimen/space_30"
+                android:maxLines="@integer/max_lines_normal"
+                android:minHeight="@dimen/textMinHeightNormal"
+                android:paddingStart="@dimen/paddingStartNormal"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/textMedium" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewUOMShortName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoCompleteTextViewUOMName"
+                android:layout_marginTop="@dimen/marginTopLarge"
+                android:background="@drawable/background_normal"
+                android:hint="@string/uom_short"
+                android:imeOptions="actionDone"
+                android:inputType="text|textAutoComplete|textAutoCorrect"
+                android:maxLength="@integer/max_length_large"
+                android:maxLines="@integer/max_lines_normal"
+                android:minHeight="@dimen/textMinHeightNormal"
+                android:layout_marginEnd="@dimen/space_30"
+                android:layout_marginStart="@dimen/space_30"
+                android:paddingStart="@dimen/paddingStartNormal"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/textMedium" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoCompleteTextViewUOMShortName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/marginButtonLarge"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:minHeight="@dimen/buttonMinHeight"
+                android:padding="@dimen/paddingButtonNormal"
+                android:text="@string/Save"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textLarge"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

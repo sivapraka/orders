@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_drawer_width">130dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Text Size-->
+    <dimen name="textNormal">12sp</dimen>
+    <dimen name="textMedium">14sp</dimen>
+    <dimen name="textLarge">10sp</dimen>
+    <dimen name="textExtraLarge">18sp</dimen>
+    <dimen name="textTitle">20sp</dimen>
+    <dimen name="minWidth">20dp</dimen>
+    <dimen name="minWidthNormal">25dp</dimen>
+    <dimen name="minHeightNormal">25dp</dimen>
+    <dimen name="minWidthMedium">30dp</dimen>
+    <dimen name="minHeightMedium">30dp</dimen>
+    <dimen name="layout_marginRight_Normal">7dp</dimen>
+    <dimen name="recycler_item_size">192dp</dimen>
+    <dimen name="layout_marginLeft">10dp</dimen>
+    <dimen name="layout_marginRight">10dp</dimen>
+    <dimen name="layout_marginRight_Large">50dp</dimen>
+    <dimen name="layout_marginRight_Medium">15dp</dimen>
+    <dimen name="layout_marginRight_normal">10dp</dimen>
+    <dimen name="layout_marginRight_extra_small">5dp</dimen>
+    <dimen name="layout_width">300dp</dimen>
+    <dimen name="layout_marginTop">24dp</dimen>
+    <dimen name="layout_marginTopSmall">1dp</dimen>
+    <dimen name="layout_marginTopSmall_TextInput">0dp</dimen>
+    <dimen name="layout_marginTopNormal">5dp</dimen>
+    <dimen name="layout_marginTopMedium">10dp</dimen>
+    <dimen name="layout_marginBottom">5dp</dimen>
+    <dimen name="layout_marginBottomLarge">10dp</dimen>
+    <dimen name="layout_marginEnd_Medium">15dp</dimen>
+
+    <dimen name="layout_marginLeft_Normal">5dp</dimen>
+    <dimen name="layout_marginLeftLarge">18dp</dimen>
+    <dimen name="detail_marginEnd">25dp</dimen>
+    <dimen name="detail_card_marginStart">15dp</dimen>
+    <dimen name="detail_card_marginEnd">15dp</dimen>
+    <dimen name="button_marginStart">18dp</dimen>
+    <dimen name="button_marginEnd">18dp</dimen>
+    <dimen name="detail_marginBottomLarge">40dp</dimen>
+    <dimen name="detail_marginTopLarge">40dp</dimen>
+    <dimen name="detail_marginStartLarge">25dp</dimen>
+    <dimen name="layout_marginLeft_small">-1dp</dimen>
+
+    <dimen name="marginNormal">1dp</dimen>
+    <dimen name="marginMedium">3dp</dimen>
+    <dimen name="marginStart">10dp</dimen>
+    <dimen name="marginLeft">10dp</dimen>
+    <dimen name="marginRight">10dp</dimen>
+    <dimen name="marginTop">4dp</dimen>
+    <dimen name="marginButtonLarge">20dp</dimen>
+    <dimen name="marginTopLarge">10dp</dimen>
+    <dimen name="marginTopExtraLarge">15dp</dimen>
+    <dimen name="marginBottom">5dp</dimen>
+    <dimen name="marginEndNormal">5dp</dimen>
+    <dimen name="marginStartNormal">20dp</dimen>
+    <dimen name="marginEnd">20dp</dimen>
+    <dimen name="paddingLeft">8dp</dimen>
+    <dimen name="paddingRight">8dp</dimen>
+    <dimen name="paddingLeftLarge">20dp</dimen>
+    <dimen name="paddingRightLarge">20dp</dimen>
+    <dimen name="paddingTop">16dp</dimen>
+    <dimen name="paddingTop_Small">-2dp</dimen>
+    <dimen name="paddingBottom">16dp</dimen>
+    <dimen name="paddingButtonNormal">10dp</dimen>
+    <dimen name="cardElevationNormal">2dp</dimen>
+    <dimen name="cardCornerRadiusNormal">7dp</dimen>
+    <dimen name="cardElevation">2dp</dimen>
+    <dimen name="cardCornerRadius">3dp</dimen>
+    <dimen name="cardMarginNormal">1dp</dimen>
+
+    <dimen name="maxHeight">80dp</dimen>
+    <dimen name="maxWidth">80dp</dimen>
+    <!-- Login-->
+    <dimen name="marginLoginStart">25dp</dimen>
+    <dimen name="marginLoginEnd">25dp</dimen>
+    <dimen name="marginLoginBottom">20dp</dimen>
+    <dimen name="marginLoginTop">70dp</dimen>
+    <!-- Resource Files-->
+    <!-- Shape Address B-->
+    <!-- Text Background-->
+    <dimen name="corner_radius">15dp</dimen>
+    <dimen name="corner_radius_small">2dp</dimen>
+
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="stroke_width_small">0.5dp</dimen>
+    <!-- Image Background-->
+    <dimen name="corner_radius_normal">5dp</dimen>
+    <dimen name="corner_radius_large">10dp</dimen>
+    <dimen name="stroke_width_large">2dp</dimen>
+    <dimen name="storke_width_extra_large">3dp</dimen>
+
+
+    <dimen name="textMinHeightNormal">37dp</dimen>
+    <dimen name="paddingStartNormal">10dp</dimen>
+    <!--ButtonBackground-->
+    <dimen name="buttonMinHeight">42dp</dimen>
+    <dimen name="AddressHeight">80dp</dimen>
+    <dimen name="userName">50dp</dimen>
+
+    <dimen name="userNameTap">30dp</dimen>
+
+    <!-- Height-->
+    <dimen name="heightNormal">150dp</dimen>
+    <dimen name="heightMedium">180dp</dimen>
+    <dimen name="signature_height">100dp</dimen>
+
+    <!-- Preview-->
+    <dimen name="layout_marginTopSmallMedium">2dp</dimen>
+
+    <!-- Drawable Padding-->
+    <dimen name="drawablePadding">10dp</dimen>
+    <dimen name="space_1">1dp</dimen>
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_3">3dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_5">5dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="padd_10">10dp</dimen>
+    <dimen name="space_15">15sp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_14">14dp</dimen>
+    <dimen name="space_18">18dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_28">28dp</dimen>
+    <dimen name="space_25">25dp</dimen>
+    <dimen name="space_30">30dp</dimen>
+    <dimen name="space_35">35dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+    <dimen name="space_42">42dp</dimen>
+    <dimen name="space_45">45dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+    <dimen name="space_55">55dp</dimen>
+    <dimen name="space_80">80dp</dimen>
+    <dimen name="space_96">80dp</dimen>
+    <dimen name="space_100">100dp</dimen>
+    <dimen name="space_120">120dp</dimen>
+    <dimen name="space_130">130dp</dimen>
+    <dimen name="space_70">70dp</dimen>
+    <dimen name="space_60">60dp</dimen>
+
+    <dimen name="space5">-5dp</dimen>
+    <dimen name="space30">-30dp</dimen>
+    <dimen name="space60">-60dp</dimen>
+    <dimen name="space80">-80dp</dimen>
+    <dimen name="space_11">11dp</dimen>
+    <dimen name="space_200">200dp</dimen>
+    <dimen name="space_150">150dp</dimen>
+    <dimen name="size_160dp">160dp</dimen>
+    <dimen name="space_50">50dp</dimen>
+    <dimen name="space_110">110dp</dimen>
+    <dimen name="space_75">75dp</dimen>
+    <dimen name="space_65">65dp</dimen>
+    <dimen name="space_500">500dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_300">300dp</dimen>
+</resources>

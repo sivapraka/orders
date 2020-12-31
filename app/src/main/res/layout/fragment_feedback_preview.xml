@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+	
+	<LinearLayout
+		android:id="@+id/line1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorNormalBackground"
+		android:minHeight="@dimen/space_50"
+		android:weightSum="100">
+		
+		<LinearLayout
+			
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="50">
+			
+			<TextView
+				android:id="@+id/date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/space_5"
+				android:drawableStart="@drawable/ic_calender_blue"
+				android:drawablePadding="@dimen/space_10"
+				android:gravity="center"
+				android:minHeight="@dimen/space_50"
+				android:text="@string/feedback_hint"
+				android:textColor="@color/newColorPrimary"
+				android:textSize="@dimen/space_16"
+				style="@style/brandon_bld"/>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="50">
+			
+			<TextView
+				android:id="@+id/time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/space_5"
+				android:drawablePadding="@dimen/space_10"
+				android:gravity="center"
+				android:minHeight="@dimen/space_50"
+				android:text="@string/feedback_hint"
+				android:textColor="@color/newColorPrimary"
+				android:textSize="@dimen/space_16"
+				style="@style/brandon_bld" />
+		</LinearLayout>
+	</LinearLayout>
+	<RelativeLayout
+		android:id="@+id/relProduct"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/line1"
+		android:background="@drawable/borderblack"
+		android:layout_marginStart="@dimen/space_20"
+		android:layout_marginEnd="@dimen/space_20"
+		android:layout_marginTop="@dimen/space_10">
+
+	<TextView
+		android:id="@+id/productName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/space_10"
+		android:layout_marginTop="@dimen/space_20"
+		android:text="@string/feedback_hint"
+		android:textColor="@color/text_blue_color"
+		style="@style/brandon_bld"
+		android:textSize="@dimen/space_16" />
+	
+	<TextView
+		android:id="@+id/feedback"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/productName"
+		android:layout_gravity="center|top"
+		android:layout_margin="@dimen/dimen_10dp"
+		android:maxLength="@integer/max_length_extra_large"
+		android:maxLines="@integer/max_length"
+		android:paddingStart="@dimen/paddingLeft"
+		android:paddingTop="@dimen/paddingTop_Small"
+		android:paddingEnd="@dimen/paddingRight"
+		android:textColor="@color/text_color"
+		style="@style/brandon_med"
+		android:textSize="@dimen/textMedium" />
+
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/rel"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/relProduct"
+		android:background="@drawable/borderblack"
+		android:layout_marginTop="@dimen/space_10"
+		android:layout_marginStart="@dimen/space_20"
+		android:layout_marginEnd="@dimen/space_20">
+		
+		<TextView
+			android:id="@+id/response"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/space_5"
+			android:layout_marginTop="@dimen/space_20"
+			android:text="@string/response_feedback"
+			android:textColor="@color/text_blue_color"
+			style="@style/brandon_bld"
+			android:textSize="@dimen/space_16" />
+		
+		<TextView
+			android:id="@+id/reply_datetime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="@dimen/space_5"
+			android:layout_marginTop="@dimen/space_20"
+			android:layout_marginEnd="@dimen/space_10"
+			android:textSize="@dimen/space_12"
+			style="@style/brandon_reg"/>
+		
+		<TextView
+			android:id="@+id/reply_from"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/response"
+			android:layout_marginStart="@dimen/space_5"
+			android:layout_marginTop="@dimen/space_10"
+			android:layout_marginEnd="@dimen/space_10"
+			android:textSize="@dimen/space_14"
+			android:textColor="@color/text_color"
+			style="@style/brandon_med" />
+		
+		<TextView
+			android:id="@+id/reply_message"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/reply_from"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/space_14"
+			android:layout_margin="@dimen/dimen_10dp"
+			style="@style/brandon_med" />
+	
+	
+	</RelativeLayout>
+
+</RelativeLayout>

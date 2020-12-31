@@ -1,0 +1,344 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/marginTopExtraLarge"
+                android:layout_marginStart="@dimen/detail_card_marginStart"
+                android:layout_marginEnd="@dimen/detail_card_marginEnd"
+                  android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                card_view:cardElevation="@dimen/cardElevation"
+                card_view:cardUseCompatPadding="true">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/newColorPrimary"
+                    />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/detail_marginStartLarge"
+                android:layout_marginEnd="@dimen/detail_marginEnd"
+                android:layout_marginTop="@dimen/detail_marginTopLarge"
+               android:layout_marginBottom="@dimen/detail_marginBottomLarge">
+
+                <ImageView
+                    android:id="@+id/customerImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:minWidth="@dimen/space_80"
+                    android:minHeight="@dimen/space_80"
+                    android:layout_marginBottom="@dimen/space_10"
+                    app:srcCompat="@drawable/ic_customer_image"/>
+                <ImageView
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignEnd="@id/customerImg"
+                    android:layout_alignBottom="@id/customerImg"
+                    android:layout_marginRight="@dimen/space_5"
+                    app:srcCompat="@drawable/ic_camera"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewCustomerCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/customer_code"
+                    android:layout_below="@id/customerImg"
+                    android:background="@drawable/background_normal"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:imeOptions="actionNext"
+                    android:drawableEnd="@drawable/ic_product_code"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:inputType="text|textFilter|textAutoComplete|textAutoCorrect|textPersonName"
+                    android:maxLength="@integer/max_length_large"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/textMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewCustomerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoCompleteTextViewCustomerCode"
+                    android:hint="@string/customer_name"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:background="@drawable/background_normal"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:drawableEnd="@drawable/ic_user"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textFilter|textAutoComplete|textAutoCorrect|textPersonName"
+                    android:maxLength="@integer/max_length_large"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/textMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewCustomerPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:background="@drawable/background_normal"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:layout_below="@+id/autoCompleteTextViewCustomerName"
+                    android:drawableEnd="@drawable/ic_phone"
+                    android:hint="@string/phoneno"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="@integer/max_length_normal"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/textMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewCustomerEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoCompleteTextViewCustomerPhoneNo"
+                    android:drawableEnd="@drawable/ic_email"
+                    android:hint="@string/email_address"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:background="@drawable/background_normal"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoCorrect|text|textAutoComplete"
+                    android:maxLength="@integer/max_length_medium"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/textMedium" />
+
+                <TextView
+                    android:id="@+id/textViewChooseImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoCompleteTextViewCustomerEmailAddress"
+                    android:text="Choose Customer Image"
+                    android:textColor="@color/color_blue"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/buttonImageChoose"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/autoCompleteTextViewCustomerEmailAddress"
+                    android:background="@drawable/button_background"
+                    android:text="Browse"
+                    android:textColor="@color/colorWhite"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imageViewProductImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buttonImageChoose"
+                    android:background="@drawable/profile"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textViewAddressTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageViewProductImage"
+                    android:layout_marginStart="@dimen/layout_marginLeft_small"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@string/roboto_regular"
+                    android:text="@string/address_details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorDark"
+                    android:textSize="@dimen/textExtraLarge"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewStreetName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAddressTitle"
+                    android:hint="@string/street"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textAutoCorrect|textAutoComplete"
+                    android:maxLength="@integer/max_length_large"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:drawableRight="@drawable/ic_street"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:background="@drawable/background_normal"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/textMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoCompleteTextViewStreetName"
+                    android:hint="@string/city"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:background="@drawable/background_normal"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:drawableRight="@drawable/ic_city"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete|textAutoCorrect|text"
+                    android:maxLength="@integer/max_length_large"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/textMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoCompleteTextViewCity"
+                    android:layout_gravity="center|top"
+                    android:hint="@string/region"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:background="@drawable/background_normal"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:drawableRight="@drawable/ic_region"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete|text"
+                    android:maxLength="@integer/max_length_large"
+                    android:maxLines="@integer/max_lines_extra_large"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:paddingTop="@dimen/paddingTop_Small"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/textMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewPostalCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoCompleteTextViewRegion"
+                    android:layout_gravity="center|top"
+                    android:hint="@string/postcode"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="@integer/max_length_large"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:drawableEnd="@drawable/ic_post_code"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:background="@drawable/background_normal"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:paddingTop="@dimen/paddingTop_Small"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/textMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewStateCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoCompleteTextViewPostalCode"
+                    android:layout_gravity="center|top"
+                    android:hint="@string/state_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoCorrect|textAutoComplete"
+                    android:maxLength="@integer/max_length"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:drawableEnd="@drawable/ic_state"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:background="@drawable/background_normal"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:paddingTop="@dimen/paddingTop_Small"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/textMedium" />
+
+                <EditText
+                    android:id="@+id/editTextGSTNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoCompleteTextViewStateCode"
+                    android:hint="@string/gst_no"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoCorrect|textAutoComplete|text"
+                    android:maxLength="@integer/max_length_large"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:drawableEnd="@drawable/ic_gst_number"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:background="@drawable/background_normal"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_weight="90">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/button_marginEnd"
+            android:layout_marginStart="@dimen/button_marginStart"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_square_background"
+                android:gravity="center"
+                android:minHeight="@dimen/buttonMinHeight"
+                android:padding="@dimen/paddingButtonNormal"
+                android:text="@string/Save"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textLarge"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

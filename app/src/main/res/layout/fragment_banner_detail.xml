@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/banneTitle"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/space_18"
+        android:textColor="@color/text_blue_color"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        style="@style/brandon_bld"
+        android:layout_marginHorizontal="@dimen/space_10"/>
+
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/space_10"
+        android:maxHeight="@dimen/space_200"/>
+
+    <TextView
+        android:id="@+id/bannerDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:textColor="@color/colorDarkGray"
+        style="@style/brandon_reg"
+        android:textSize="@dimen/space_14"/>
+
+</LinearLayout>

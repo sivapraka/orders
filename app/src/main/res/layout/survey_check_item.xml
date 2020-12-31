@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/space_2"
+    app:cardCornerRadius="@dimen/space_3"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/itemLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10">
+
+    <TextView
+        android:id="@+id/qatextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/space_16"
+        style="@style/brandon_bld"
+        android:textColor="@color/text_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/option_a_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/view1"
+            android:layout_weight="@integer/int_1"
+            android:clickable="false"
+            android:editable="false"
+            style="@style/brandon_reg"
+            android:text="@string/ledgerBal" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/space_1"
+            android:layout_height="@dimen/space_1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/option_b_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/view1"
+            android:layout_weight="@integer/int_1"
+            android:clickable="false"
+            android:editable="false"
+            style="@style/brandon_reg"
+            android:text="@string/ledgerBal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/option_c_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/view2"
+            android:layout_weight="@integer/int_1"
+            android:clickable="false"
+            android:editable="false"
+            style="@style/brandon_reg"
+            android:text="@string/ledgerBal" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="@dimen/space_1"
+            android:layout_height="@dimen/space_1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/option_d_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/view2"
+            android:layout_weight="@integer/int_1"
+            android:clickable="false"
+            style="@style/brandon_reg"
+            android:editable="false"
+            android:text="@string/ledgerBal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ansTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/dateTextView"
+            android:textColor="@color/text_color"
+            style="@style/brandon_bld" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            style="@style/brandon_reg"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

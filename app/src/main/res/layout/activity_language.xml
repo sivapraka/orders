@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_ws_flash_screen">
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/popupscreenlogo" />
+
+    <TextView
+        android:id="@+id/txtVw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash"
+        android:layout_marginStart="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_30"
+        android:text="Choose Language:"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/space_22"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash"
+        android:layout_marginStart="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginEnd="@dimen/space_10"
+        android:layout_toRightOf="@+id/txtVw"
+        android:minHeight="@dimen/space_45">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_10"
+            android:minHeight="@dimen/space_45" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/conbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"
+        android:padding="@dimen/space_10"
+        android:text="@string/Continue"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/space_16"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>

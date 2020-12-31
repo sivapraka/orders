@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checkedButton="@+id/radioButtonAllBills"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <RadioButton
+            android:id="@+id/radioButtonAllBills"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:minHeight="@dimen/space_40"
+            android:textColor="@color/colorWhite"
+            android:text="@string/allBills" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCancelBills"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="50"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/cancelBills" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup">
+
+        <TextView
+            android:id="@+id/textViewBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="@string/totalNoBill"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+        <TextView
+            android:id="@+id/textViewTotalBills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:text="0"
+            android:minWidth="@dimen/space_30"
+            android:background="@color/colorGreen"
+            android:layout_toEndOf="@id/textViewBill"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+        <TextView
+            android:id="@+id/textViewBillValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/totalBillValue"
+            android:layout_toLeftOf="@id/textViewTotalBillValue"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+        <TextView
+            android:id="@+id/textViewTotalBillValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:minWidth="@dimen/space_30"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="0bffnfd"
+            android:background="@color/colorGreen"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutTotal"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/space_5"/>
+
+    <TextView
+        android:id="@+id/textViewNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/space_12"
+        android:gravity="center"
+        android:text="@string/noBillOn"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/radioGroup"
+        android:layout_margin="@dimen/space_10"
+        android:padding="@dimen/space_5"/>
+
+</RelativeLayout>

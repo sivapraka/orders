@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewDetails"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:backgroundTint="@color/white"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textViewAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marginTop"
+            android:fontFamily="@string/roboto_thin"
+            android:paddingStart="@dimen/paddingStartNormal"
+            android:text="New Registration"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textExtraLarge"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textViewpaydialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAdd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marginTopLarge"
+            android:layout_marginBottom="@dimen/textNormal"
+            android:fontFamily="@string/roboto_thin"
+            android:paddingStart="@dimen/paddingStartNormal"
+            android:text="Are you sure want to update the Ledger balance?"
+            android:textColor="@color/startColor"
+            android:textSize="@dimen/textNormal"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editTexAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewpaydialog"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_10"
+            android:background="@drawable/borderblack"
+            android:digits="@string/digits_number"
+            android:gravity="center"
+            android:hint="@string/mobile_no"
+            android:inputType="number"
+            android:maxLength="@integer/int_10"
+            android:paddingLeft="@dimen/space_12"
+            android:paddingTop="@dimen/space_15"
+            android:paddingBottom="@dimen/space_15"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="@dimen/space_14" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTexAmount"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginBottom="@dimen/space_20">
+
+            <Button
+                android:id="@+id/buttonNo"
+                style="@style/brandon_blk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:text="@string/cancel"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/buttonYes"
+                style="@style/brandon_blk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:text="@string/action_verify_otp"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

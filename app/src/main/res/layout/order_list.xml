@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayoutMenu"
+    android:paddingTop="@dimen/space_5"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linerheadpayreport"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10">
+
+        <TextView
+            android:id="@+id/pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/product_name"
+            />
+
+        <TextView
+            android:id="@+id/qtyy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:paddingRight="@dimen/space_10"
+            android:text="@string/quantity"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/viewpayreport"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/colorGray"
+        android:layout_below="@+id/linerheadpayreport"
+        android:layout_marginTop="@dimen/space_5"
+        />
+
+
+</RelativeLayout>

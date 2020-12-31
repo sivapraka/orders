@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="@dimen/space_5">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/messageLinearLayout"
+    android:background="@color/white"
+    android:padding="@dimen/space_5"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/space_5"
+    android:layout_marginRight="@dimen/space_5">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/brandon_bld"
+        android:textColorHint="@color/textHintColor"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/space_14"
+        android:text="title"
+        android:layout_toLeftOf="@id/dateTextView"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/space_12"
+        style="@style/brandon_reg"
+        android:textColorHint="@color/textHintColor"
+        android:textColor="@color/text_color"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/desriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5"
+        style="@style/brandon_reg"
+        android:text="des"
+        android:textColorHint="@color/textHintColor"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/space_14"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

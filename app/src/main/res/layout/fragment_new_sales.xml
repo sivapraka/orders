@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/colorNormalBackground"
+    android:orientation="vertical"
+    tools:context="com.demo.orders.fragment.NewSalesFragment">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_address"
+        android:clickable="false"
+        android:drawableEnd="@drawable/ic_search"
+        android:drawablePadding="@dimen/drawablePadding"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/customer"
+        android:imeOptions="actionDone"
+        android:inputType="textAutoComplete|textAutoCorrect|text"
+        android:keepScreenOn="true"
+        android:maxLength="@integer/max_length_large"
+        android:maxLines="@integer/max_lines_normal"
+        android:minHeight="@dimen/userName"
+        android:paddingStart="@dimen/paddingLeft"
+        android:paddingTop="@dimen/paddingTop_Small"
+        android:paddingEnd="@dimen/paddingRight"
+        android:textColorHint="@color/colorGray"
+        android:textSize="@dimen/textMedium" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextViewCustomerName"
+        android:layout_gravity="center|top"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/bg_address"
+        android:clickable="true"
+        android:drawablePadding="@dimen/drawablePadding"
+        android:drawableEnd="@drawable/ic_search"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:hint="@string/select_product"
+        android:imeOptions="actionNext"
+        android:keepScreenOn="true"
+        android:maxLength="@integer/max_length_large"
+        android:maxLines="@integer/max_lines_normal"
+        android:minHeight="@dimen/userName"
+        android:paddingStart="@dimen/paddingLeft"
+        android:paddingEnd="@dimen/paddingRight"
+        android:paddingTop="@dimen/paddingTop_Small"
+        android:textColorHint="@color/colorGray"
+        android:textSize="@dimen/textMedium" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayoutAmount"
+        android:layout_below="@+id/autoCompleteTextViewProductName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutAmount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/linearLayoutBottom"
+        android:background="@color/colorBlack">
+
+        <TextView
+            android:id="@+id/textviewTotalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/total_pay"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTotalPayAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textviewTotalTitle"
+            android:layout_alignBottom="@+id/textviewTotalTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="44dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textLarge"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewAmountDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textViewTotalPayAmount"
+            android:visibility="gone"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/amount_details" />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/linearLayoutBottom"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_background"
+        android:text="@string/Continue"
+        android:textColor="@color/colorWhite"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/buttonPayment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_background"
+        android:text="@string/pay"
+        android:visibility="gone"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/buttonPrint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_background"
+        android:text="@string/print"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone" />
+
+</LinearLayout>
+</RelativeLayout>

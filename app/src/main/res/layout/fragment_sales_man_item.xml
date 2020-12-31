@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardMarginNormal"
+    card_view:cardBackgroundColor="@color/cardBackground"
+    card_view:cardCornerRadius="@dimen/cardCornerRadius"
+    card_view:cardElevation="@dimen/cardElevation"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/relativeLayoutProducts"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="6dp">
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:padding="@dimen/space_1"
+            card_view:srcCompat="@drawable/ic_dustbin"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_11" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_5"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_toLeftOf="@id/delete"
+            android:gravity="center"
+            android:padding="@dimen/space_1"
+            card_view:srcCompat="@drawable/ic_option_edit"
+            android:textColor="@color/colorBlack"
+
+            android:textSize="@dimen/space_11" />
+
+        <ImageView
+            android:id="@+id/View"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toStartOf="@+id/edit"
+            android:layout_toLeftOf="@+id/edit"
+            android:gravity="center"
+            android:visibility="gone"
+            card_view:srcCompat="@drawable/ic_eye"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_11" />
+
+        <ImageView
+            android:id="@+id/imageViewProductImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/View"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/imageViewProductImage"
+            android:gravity="start|center"
+            android:maxLength="150"
+            android:maxLines="3"
+            android:text="boAt BassHeads 225 In-Ear Styhrhesjoietioeioeiogeioeyioteiotegtettwrwertiote"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewProductUOM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewAddress"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:text="@string/currentDate"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textMedium"
+            />
+
+        <TextView
+            android:id="@+id/textViewProductsDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewName"
+            android:layout_below="@+id/textViewName"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:text="Innovative housing design enables for easy adjustment and optimal wearing comfort with powerful 10mm drivers for sonic clarity, bass-driven stereo sound and good attenuation of ambient noise"
+            android:textColor="@color/colorBlack"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/textViewMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewName"
+            android:layout_below="@+id/textViewName"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:text="1234567890"
+            android:textColor="@color/colorBlack"
+            android:maxLength="15"
+            android:textSize="@dimen/textNormal"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewMobileNo"
+            android:layout_below="@+id/textViewMobileNo"
+            android:layout_marginTop="5dp"
+            android:text="boAt BassHeads 225 In-Ear Styhrhesjoietioeioeiogeioeyioteiotegtettwrwertiote"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewCurrentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_alignBaseline="@+id/textViewMobileNo"
+            android:layout_alignBottom="@+id/textViewAddress"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:text="@string/currentDate"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

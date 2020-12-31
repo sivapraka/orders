@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.StatisticsFragment">
+    <RelativeLayout
+        android:id="@+id/wavereal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statisticstextviewheading"
+        android:text="@string/statistics"
+        android:textColor="@color/colorGray"
+        android:paddingLeft="@dimen/space_3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statisticstextviewunit"
+        android:text="@string/wavesunit"
+        android:textColor="@color/colorGray"
+        android:layout_toLeftOf="@+id/statisticstextviewvalue"
+        android:paddingRight="@dimen/space_3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statisticstextviewvalue"
+        android:text="@string/wavesvalue"
+        android:textColor="@color/smokyBlue"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/space_3"/>
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/wavereal"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_5"/>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="@dimen/space_2">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/notifyLinearLayout"
+    android:background="@color/white"
+    android:paddingVertical="@dimen/space_5"
+    android:layout_marginLeft="@dimen/space_10"
+    android:layout_marginRight="@dimen/space_10"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/qatextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/brandon_reg"
+        android:textSize="@dimen/space_14"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_10">
+    <TextView
+        android:id="@+id/typeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="dffgggg"
+        android:textSize="@dimen/space_12"
+        style="@style/brandon_med"
+        android:paddingHorizontal="@dimen/space_3"
+        android:background="@drawable/button_background_blue"
+        />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/space_12"
+        style="@style/brandon_reg"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

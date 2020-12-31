@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerViewdropdown"
+       android:layout_width="match_parent"
+       android:layout_centerHorizontal="true"
+       android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_40"
+        android:layout_below="@+id/recyclerViewdropdown"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"
+        android:text="OK"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginBottom="@dimen/space_25"/>
+
+</RelativeLayout>

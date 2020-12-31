@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SalesTrendFragment">
+    <RelativeLayout
+        android:id="@+id/wavereal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/salestrendtextviewhead"
+        android:text="@string/sales_trend"
+        android:textColor="@color/colorGray"
+        android:paddingLeft="@dimen/space_3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/salestrendtextviewvalue"
+        android:id="@+id/salestrendtextviewunit"
+        android:text="@string/wavesunit"
+        android:paddingRight="@dimen/space_3"
+        android:textColor="@color/colorGray"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/salestrendtextviewvalue"
+        android:text="@string/wavesvalue"
+        android:paddingLeft="@dimen/space_3"
+        android:paddingRight="@dimen/space_3"
+        android:textColor="@color/smokyBlue"/>
+</RelativeLayout>
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/wavereal"
+        android:layout_marginTop="@dimen/space_5"/>
+
+</RelativeLayout>

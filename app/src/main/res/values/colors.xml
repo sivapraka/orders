@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorBackground">#ededf1</color>
+    <color name="colorPrimary">#786b6b</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorAccent">#AEDDF9</color>
+    <color name="colorGreen">#11be47</color>
+    <color name="colorDarkGray">#919191</color>
+    <color name="colorLightRed">#ea292c</color>
+    <color name="actionBarColor">#009CDE</color>
+    <color name="actionBarColorDark">#0081B7</color>
+    <color name="color_light_gray">#ecede8</color>
+    <color name="color_light_selection">#f0f1ee</color>
+    <color name="colorLoginBackground">#c2b5b5</color>
+    <color name="colorHeader">#797171</color>
+    <color name="color_gold">#ffd800</color>
+    <color name="card_background">#e9e4e4</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="color_blue">#0e67ec</color>
+    <color name="color_blue_light">#AEDDF9</color>
+    <color name="color_light_blue">#6ccee9</color>
+    <color name="startColor">#786b6b</color>
+    <color name="centerColor">#646c73</color>
+    <color name="endColor">#cdd3d6</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDark">#413d3d</color>
+    <color name="cardBackground">#f0f7f6f6</color>
+    <color name="menuStartColor">#fdfcf6</color>
+    <color name="menuCenterColor">#f9f8f7</color>
+    <color name="menuEndColor">#f5f5f4</color>
+    <color name="colorGray">#786b6b</color>
+    <color name="newEndColor">#f5ecb8</color>
+    <color name="newAutoCompleteTextColor">#f7f6f2</color>
+    <color name="newStartColor">#ba6b02</color>
+    <color name="newColor">#002E6E</color>
+    <color name="newColorPrimary">#002E6E</color>
+    <color name="newColorPrimarybottom" >#002E6E</color>
+    <color name="colorWhitebottom">#ffffff</color>
+    <color name="colorRed">#fc0022</color>
+    <color name="colorNormalBackground">#E7E7E7</color>
+    <color name="textHintColor">#a7a9ac</color>
+    <color name="colorLightGray">#83847d</color>
+    <color name="LightGray">#707070</color>
+
+    <!-- Radio Button-->
+    <color name="color_payment">#21ea32</color>
+    <color name="smokyBlack">#100c08</color>
+    <color name="smokyBlue">#00b9f1</color>
+
+
+    <!-- Address  Background-->
+    <color name="startColorAddress">#cce8ed</color>
+    <color name="centerColorAddress">#8bb5d7</color>
+    <color name="endColorAddress">#f2f2f2</color>
+    <color name="logoBlue">#080A52</color>
+    <color name="darkGray">#222020</color>
+
+    <!-- Color for Text Background  if no User Image-->
+    <color name="colorA">#51cee4</color>
+    <color name="colorB">#8b0eb9</color>
+    <color name="colorC">#29b33b</color>
+    <color name="colorD">#ef5b11</color>
+    <color name="colorE">#4c55f4</color>
+    <color name="colorF">#08af08</color>
+    <color name="colorG">#717171</color>
+    <color name="colorH">#cc05bf</color>
+    <color name="colorI">#65c9f4</color>
+    <color name="colorJ">#c947b46f</color>
+    <color name="colorK">#9b9393</color>
+    <color name="colorL">#9947e6</color>
+    <color name="colorM">#ef6060</color>
+    <color name="colorN">#b131d4</color>
+    <color name="colorO">#fc821f</color>
+    <color name="colorP">#e98a25</color>
+    <color name="colorQ">#3ec404</color>
+    <color name="colorR">#ca1bde</color>
+    <color name="colorS">#f25e85</color>
+    <color name="colorT">#f7cf1b</color>
+    <color name="colorU">#f0f55353</color>
+    <color name="colorV">#8336f7</color>
+    <color name="colorW">#58c273</color>
+    <color name="colorX">#ef1355</color>
+    <color name="colorY">#8c8e8f</color>
+    <color name="colorZ">#f2b31f</color>
+    <color name="text_color">#414042</color>
+    <color name="text_blue_color">#002e6e</color>
+    <color name="parseColor">#FFE4770A</color>
+
+</resources>

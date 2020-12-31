@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!-- View Corner Color-->
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/centerColor" />
+            <!-- view background color -->
+            <gradient
+                android:angle="180"
+                android:endColor="@color/newAutoCompleteTextColor"
+                android:startColor="@color/newAutoCompleteTextColor" />
+                 <!-- If you want to add some padding -->
+
+        </shape>
+
+    </item>
+</layer-list>

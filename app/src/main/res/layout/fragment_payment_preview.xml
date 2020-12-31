@@ -1,0 +1,352 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_weight="90"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/space_4"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewCompanyAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCompanyName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewCompanyGSTIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCompanyAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_14" />
+
+        <TextView
+            android:id="@+id/textViewUserID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCompanyGSTIN"
+            android:text="UI134"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_12" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_below="@+id/textViewUserID"
+            android:text="admin"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_14" />
+
+        <TextView
+            android:id="@+id/textViewBillNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUserID"
+            android:layout_marginTop="@dimen/marginTop"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_14" />
+
+        <TextView
+            android:id="@+id/textViewCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewBillNo"
+            android:layout_marginTop="@dimen/marginTop"
+            android:text="@string/customer_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewCustomerAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCustomerName"
+            android:layout_marginTop="@dimen/marginTop"
+            android:text="@string/tempPara"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_12" />
+
+        <TextView
+            android:id="@+id/textViewCustomerGSTIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCustomerAddress"
+            android:layout_marginTop="@dimen/space_4"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/space_12" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutProductList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCustomerGSTIN">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/paydetailslinearlay">
+
+                    <TextView
+                        android:id="@+id/paypreamounttextView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/paymentdetails"
+                        android:textSize="@dimen/space_25"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/cash_or_chequetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/paypreamounttextView27"
+                        android:text="Cash"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/space_2"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/space_15" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/paymentcashlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/paydetailslinearlay"
+                    android:layout_alignParentStart="true">
+
+                   <!-- <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paymentdetamount"
+                        android:textSize="@dimen/space_14"
+                        android:textColor="@color/colorBlack"/>
+-->
+                   <!-- <TextView
+                        android:id="@+id/paypreamounttextView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="$1500"
+                        android:layout_toRightOf="@+id/textView26"
+                        android:layout_alignParentRight="true"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/space_14"
+                        android:textColor="@color/colorBlack"/>-->
+
+                   <!-- <TextView
+                        android:id="@+id/paymentmethodtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:text="@string/paymentdetpaymethod"
+                        android:layout_below="@+id/paypreamounttextView27"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/space_14" />
+
+                    <TextView
+                        android:id="@+id/cash_or_chequetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/paymentmethodtxt"
+                        android:text="Cash"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:layout_below="@+id/paypreamounttextView27"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/space_14" />
+-->
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/paymentprecheque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_below="@+id/paymentcashlayout">
+
+                   <TextView
+                        android:id="@+id/checquenotxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paymentdetchequeno1"
+                        android:textSize="@dimen/space_14"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:textColor="@color/colorBlack"/>
+-->
+                    <TextView
+                        android:id="@+id/autochecquenotxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="brbrgjbm"
+                        android:textSize="@dimen/space_14"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:layout_marginStart="@dimen/space_2"
+                        android:layout_toRightOf="@+id/checquenotxt"
+                        android:textColor="@color/colorBlack"/>
+end
+                    <TextView
+                        android:id="@+id/checquedatetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paymentdetchequedate"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:layout_toLeftOf="@+id/autochecquedatetxt"
+                        android:textSize="@dimen/space_14"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:id="@+id/autochecquedatetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_2"
+                        android:layout_marginLeft="174dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:text="15/7/19"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/space_14" />
+
+                    <TextView
+                        android:id="@+id/bankdetailtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checquedatetxt"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:text="@string/paymentdetbankdet"
+                        android:textSize="@dimen/space_14"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/autobankdetailtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_2"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:layout_toRightOf="@+id/bankdetailtxt"
+                        android:layout_below="@+id/autochecquenotxt"
+                        android:minWidth="@dimen/space_50"
+                        android:text="uhihvuviuvievievivivivivviuviuviu"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/space_14" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_4"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:minHeight="@dimen/space_42"
+            android:padding="@dimen/space_10"
+            android:text="@string/print"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/space_16"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/buttonConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_4"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:minHeight="@dimen/space_42"
+            android:padding="@dimen/space_10"
+            android:text="@string/connect"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/space_16"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_4"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:minHeight="@dimen/space_42"
+            android:padding="@dimen/space_10"
+            android:text="@string/Save"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/space_16"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

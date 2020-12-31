@@ -1,0 +1,59 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorNormalBackground">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center|top"
+        android:background="@drawable/bg_address"
+        android:clickable="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:drawablePadding="@dimen/drawablePadding"
+        android:drawableRight="@drawable/ic_search"
+        android:focusable="true"
+        android:hint="@string/click_search"
+        android:imeOptions="actionDone"
+        android:keepScreenOn="true"
+        android:visibility="gone"
+        android:inputType="text|textAutoCorrect|textAutoComplete"
+        android:maxLength="@integer/max_length_large"
+        android:maxLines="@integer/max_lines_normal"
+        android:minHeight="@dimen/userName"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:paddingTop="@dimen/paddingTop_Small"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="@dimen/textMedium" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/autoCompleteTextViewProductName"
+        android:layout_centerHorizontal="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/productAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/newColorPrimary"
+        android:backgroundTint="@color/newColorPrimary"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

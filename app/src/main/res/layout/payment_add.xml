@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="6dp"
+	android:layout_marginRight="6dp"
+	android:background="@color/transparent">
+	
+	<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/cardViewDetails"
+		android:layout_width="match_parent"
+		android:layout_height="240dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:background="@color/colorWhite"
+		app:cardBackgroundColor="@color/colorWhite"
+		app:cardCornerRadius="3dp"
+		app:cardElevation="3dp"
+		app:cardUseCompatPadding="true">
+		
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="0dp">
+			
+			<TextView
+				android:id="@+id/textViewAdd"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="@dimen/marginTop"
+				android:paddingStart="@dimen/paddingStartNormal"
+				android:text="Payment"
+				style="@style/brandon_bld"
+				android:textColor="@color/text_color"
+				android:textSize="@dimen/textExtraLarge" />
+			
+			
+			<TextView
+				android:id="@+id/textViewpaydialog"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/textViewAdd"
+				android:layout_centerHorizontal="true"
+                android:visibility="gone"
+				android:layout_marginTop="@dimen/marginTopLarge"
+				android:layout_marginBottom="@dimen/textNormal"
+				android:fontFamily="@string/roboto_thin"
+				android:paddingStart="@dimen/paddingStartNormal"
+				android:text="Are you sure want to update the Ledger balance?"
+				android:textColor="@color/startColor"
+				android:textSize="@dimen/textNormal"
+				android:textStyle="bold" />
+			
+			<EditText
+				android:id="@+id/editTexAmount"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/textViewpaydialog"
+				android:layout_gravity="center"
+				android:layout_margin="@dimen/space_10"
+				android:background="@drawable/borderblack"
+				android:digits="@string/digits_number"
+				android:gravity="center"
+				android:hint="Enter Amount"
+				android:inputType="number"
+				android:maxLength="@integer/int_5"
+				android:paddingLeft="@dimen/space_12"
+				android:paddingTop="@dimen/space_15"
+				android:paddingBottom="@dimen/space_15"
+				android:singleLine="true"
+				style="@style/brandon_reg"
+				android:textColorHint="@color/textHintColor"
+				android:textColor="@color/text_color"
+				android:textSize="@dimen/space_12" />
+			
+			<LinearLayout
+				android:id="@+id/linearLayoutAlert"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginTop="2dp">
+				
+				<Button
+					android:id="@+id/buttonNo"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="@color/colorLightRed"
+					android:text="@string/cancel"
+					android:textColor="@color/colorWhite" />
+				
+				<Button
+					android:id="@+id/buttonYes"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="@color/colorGreen"
+					android:text="@string/pay_now"
+					android:textColor="@color/colorWhite" />
+			
+			</LinearLayout>
+		</RelativeLayout>
+	
+	</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

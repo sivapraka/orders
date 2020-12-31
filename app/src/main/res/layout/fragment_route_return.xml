@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/space_10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="@string/type"/>
+
+    <Spinner
+        android:id="@+id/returnType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/space_40"
+        android:background="@drawable/background_normal"
+        android:entries="@array/selectType"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/products"
+        android:layout_marginTop="@dimen/space_20"
+        android:textColor="@color/colorBlack"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextViewCustomerName"
+        android:layout_gravity="center|top"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/bg_address"
+        android:clickable="true"
+        android:drawablePadding="@dimen/drawablePadding"
+        android:drawableEnd="@drawable/ic_search"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:hint="@string/select_product"
+        android:imeOptions="actionNext"
+        android:keepScreenOn="true"
+        android:maxLength="@integer/max_length_large"
+        android:maxLines="@integer/max_lines_normal"
+        android:minHeight="@dimen/userName"
+        android:paddingStart="@dimen/paddingLeft"
+        android:paddingEnd="@dimen/paddingRight"
+        android:paddingTop="@dimen/paddingTop_Small"
+        android:textColorHint="@color/colorGray"
+        android:textSize="@dimen/textMedium"/>
+
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/space_40"
+        android:background="@color/newColorPrimary"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/space_16"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="@string/add"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:visibility="gone"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/products"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="60"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingRight="@dimen/space_20"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingRight="@dimen/space_20"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="20"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_return"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:visibility="visible"
+        android:layout_above="@id/save"
+        android:layout_below="@id/linearLayout"
+        tools:listitem="@layout/fragment_route_return_item"/>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/space_40"
+        android:background="@color/newColorPrimary"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textSize="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="@string/Save"/>
+
+</RelativeLayout>

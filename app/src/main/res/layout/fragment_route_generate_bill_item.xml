@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_route_generate_bill"
+    android:orientation="horizontal"
+      android:weightSum="100">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edgfdfdnhfdnfngngfng"
+        android:layout_toLeftOf="@id/quantity"
+        android:minWidth="@dimen/space_50"
+        android:maxWidth="@dimen/space_40"
+        android:layout_weight="70"
+       />
+
+    <TextView
+        android:id="@+id/toatalQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text=""
+        android:layout_weight="15"
+        />
+
+    <TextView
+        android:id="@+id/sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:maxWidth="@dimen/space_30"
+        android:text=""
+        android:layout_weight="15"
+        />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/space_10">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/selectRegion"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewLevel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_normal"
+        android:textSize="@dimen/textMedium"
+        android:layout_marginTop="@dimen/marginTopLarge"
+        android:maxLength="@integer/max_length_large"
+        android:maxLines="@integer/max_lines_normal"
+        android:textColorHint="@color/colorPrimary"
+        android:minHeight="@dimen/textMinHeightNormal"
+        android:paddingEnd="@dimen/paddingRight"
+        android:paddingStart="@dimen/paddingStartNormal"
+        android:hint="@string/region"
+        android:layout_below="@id/spinner"
+        android:visibility="visible"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewLevel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_normal"
+        android:minHeight="@dimen/textMinHeightNormal"
+        android:textSize="@dimen/textMedium"
+        android:layout_marginTop="@dimen/marginTopLarge"
+        android:maxLength="@integer/max_length_large"
+        android:paddingEnd="@dimen/paddingRight"
+        android:paddingStart="@dimen/paddingStartNormal"
+        android:maxLines="@integer/max_lines_normal"
+        android:hint="@string/district"
+        android:textColorHint="@color/colorPrimary"
+        android:visibility="visible"
+        android:layout_below="@id/autoCompleteTextViewLevel1"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewLevel3"
+        android:layout_width="match_parent"
+        android:paddingEnd="@dimen/paddingRight"
+        android:paddingStart="@dimen/paddingStartNormal"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_normal"
+        android:minHeight="@dimen/textMinHeightNormal"
+        android:textSize="@dimen/textMedium"
+        android:hint="@string/route"
+        android:maxLength="@integer/max_length_large"
+        android:maxLines="@integer/max_lines_normal"
+        android:layout_marginTop="@dimen/marginTopLarge"
+        android:textColorHint="@color/colorPrimary"
+        android:visibility="visible"
+        android:layout_below="@id/autoCompleteTextViewLevel2"/>
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_background"
+                android:layout_below="@id/autoCompleteTextViewLevel3"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/marginTopLarge"
+                android:minHeight="@dimen/buttonMinHeight"
+                android:padding="@dimen/paddingButtonNormal"
+                android:text="@string/Save"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textLarge"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="@dimen/cardElevation"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutProductList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextViewProductName"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp">
+
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+          />
+
+        <TextView
+            android:id="@+id/textViewCurrentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textViewInvoiceID"
+            android:layout_alignTop="@+id/imageViewProfile"
+            android:text="07-03-2018"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewInvoiceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewCurrentDate"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:text="SCO23453JF63"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageViewProfile"
+            android:layout_below="@+id/imageViewProfile"
+            android:layout_marginTop="@dimen/space_6"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingLeft="@dimen/space_10"
+            android:text="Scoto-Systec"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTextCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewUserName"
+            android:layout_alignTop="@+id/textViewUserName"
+            android:layout_marginTop="30dp"
+            android:maxLines="2"
+            android:text="You Have purchased 5 items "
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/textViewSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textViewTextCount"
+            android:layout_below="@+id/textViewTextCount"
+            android:layout_marginTop="61dp"
+            android:maxLines="2"
+            android:text="Taxable Amount"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewSalesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textViewDiscountCount"
+            android:layout_alignTop="@+id/textViewSales"
+            android:maxLines="2"
+            android:text=" "
+            android:textColor="@color/colorBlack" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutIGST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewSales"
+            android:layout_below="@+id/textViewSales"
+            android:layout_marginEnd="11dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/textViewigst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="IGST Tax "
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewigstCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:maxLines="2"
+                android:text=" "
+                android:textColor="@color/colorBlack" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCGST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/relativeLayoutIGST"
+            android:layout_below="@+id/relativeLayoutIGST"
+            android:layout_marginEnd="11dp">
+
+            <TextView
+                android:id="@+id/textViewsgst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="SGST Tax "
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewSGSTCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:maxLines="2"
+                android:text=" "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textViewcgst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewsgst"
+                android:maxLines="2"
+                android:text="CGST Tax "
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewCGSTCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textViewSGSTCount"
+                android:maxLines="2"
+                android:text=" "
+                android:textColor="@color/colorBlack" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/textViewDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewTotalAmount"
+            android:layout_below="@+id/relativeLayoutCGST"
+            android:maxLines="2"
+            android:visibility="invisible"
+            android:text="Discount "
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewDiscountCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textViewDiscount"
+            android:layout_marginEnd="@dimen/space_10"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textViewTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewSales"
+            android:layout_below="@+id/textViewDiscountCount"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginTop="@dimen/space_10"
+            android:maxLines="2"
+            android:text="Total Payable:"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTotalAmountCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewTotalAmount"
+            android:layout_alignBottom="@+id/textViewTotalAmount"
+            android:layout_alignEnd="@+id/textViewCurrentDate"
+            android:maxLines="2"
+            android:text=" "
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textViewUserName"
+            android:layout_alignEnd="@+id/textViewInvoiceID"
+            android:maxLines="2"
+            android:text="1800"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewBalanceDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewBalance"
+            android:layout_alignBottom="@+id/textViewBalance"
+            android:layout_toStartOf="@+id/textViewInvoiceID"
+            android:maxLines="2"
+            android:text="Balance Due"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/textExtraLarge"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/newColor</item>
+        <item name="colorPrimaryDark">@color/newColorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+<!--        <item name="fontFamily">@font/brandon_reg</item>-->
+     <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="alertDialogTheme">@style/AppTheme.DialogTheme</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme.DialogTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/newColor</item>
+        <item name="colorPrimaryDark">@color/newColor</item>
+        <item name="colorAccent">@color/newColor</item>
+<!--        <item name="fontFamily">@font/brandon_bld</item>-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+       <item name="android:textColor">@color/colorWhite</item>
+        <item name="homeAsUpIndicator">@drawable/ic_menu</item>
+<!--        <item name="fontFamily">@font/brandon_reg</item>-->
+    </style>
+    <style name="ActionTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+<!--        <item name="fontFamily">@font/brandon_reg</item>-->
+        <item name="homeAsUpIndicator">@drawable/ic_menunew</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">12sp</item>
+<!--        <item name="fontFamily">@font/brandon_reg</item>-->
+    </style>
+
+<!-- Radio Button-->
+    <style name="RadioButton">
+        <item name="android:button">@null</item>
+        <item name="background">@drawable/bg_toggle_checked</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">center</item>
+<!--        <item name="fontFamily">@font/brandon_reg</item>-->
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <!-- 2 Radio Button-->
+    <style name="Radio_button">
+        <item name="android:button">@null</item>
+        <item name="background">@drawable/selectedstate </item>
+        <item name="android:gravity">center</item>
+<!--        <item name="fontFamily">@font/brandon_reg</item>-->
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/newColor</item>
+        <item name="android:src">@drawable/home</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/newColor</item>
+        <item name="android:textColorSecondary">@color/newColor</item>
+<!--        <item name="fontFamily">@font/brandon_reg</item>-->
+    </style>
+<!-- Toolbar Icon-->
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/home</item>
+<!--        <item name="fontFamily">@font/brandon_reg</item>-->
+    </style>
+
+    <!-- Datepicker-->
+    <style name="date_picker_theme" parent="@android:style/Widget.DatePicker">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="colorAccent" tools:targetApi="lollipop">@color/newColor</item>
+    </style>
+<!--
+    <style name="ActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+    </style>
+
+    <style name="ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:icon">@drawable/ic_back</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>-->
+    <!-- add due to activity main test-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="brandon_med" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/brandon_med</item>
+    </style>
+
+    <style name="brandon_blk" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/brandon_blk</item>
+    </style>
+
+    <style name="brandon_reg" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/brandon_reg</item>
+    </style>
+
+    <style name="brandon_bld" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/brandon_bld</item>
+    </style>
+
+</resources>

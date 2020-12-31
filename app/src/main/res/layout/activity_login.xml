@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/relativeLayoutLogin"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/ic_ws_flash_screen"
+	android:orientation="vertical"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin">
+<RelativeLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerVertical="true">
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cardviewlayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:cardCornerRadius="@dimen/space_10"
+		app:cardElevation="@dimen/space_3"
+		android:layout_marginStart="@dimen/marginLoginStart"
+		android:layout_marginEnd="@dimen/marginLoginEnd"
+		android:layout_marginBottom="@dimen/space_20"
+		app:cardUseCompatPadding="true">
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorWhite"
+		
+		android:padding="@dimen/space_10">
+		
+		<ImageView
+			android:id="@+id/imageViewUserImage"
+			android:layout_width="@dimen/size_160dp"
+			android:layout_height="@dimen/size_160dp"
+			android:layout_centerHorizontal="true"
+			app:srcCompat="@drawable/popupscreenlogo"
+			android:visibility="visible" />
+		
+		<TextView
+			android:id="@+id/welcomeText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/imageViewUserImage"
+			android:layout_marginTop="@dimen/space_12"
+			android:gravity="center"
+			android:text="@string/welcomePage"
+			android:textColor="@color/newColor"
+			style="@style/brandon_bld"
+			android:textSize="@dimen/space_22" />
+		
+		<AutoCompleteTextView
+			android:id="@+id/autoCompleteTextViewUserName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/welcomeText"
+			android:layout_gravity="center|top"
+			android:layout_marginTop="@dimen/space_30"
+			android:background="@drawable/background_border_left"
+			android:drawableRight="@drawable/ic_phone"
+			android:drawablePadding="@dimen/space_10"
+			android:digits="@string/digits_number"
+			android:hint="@string/mobile_no"
+			android:imeOptions="actionNext"
+			android:inputType="phone"
+			android:maxLength="@integer/int_10"
+			android:maxLines="@integer/max_lines_normal"
+			android:minHeight="@dimen/userName"
+			android:paddingLeft="@dimen/paddingLeft"
+			android:paddingTop="@dimen/paddingTop_Small"
+			android:paddingRight="@dimen/paddingRight"
+			android:textColor="@color/text_color"
+			android:textColorHint="@color/textHintColor"
+			android:textSize="@dimen/textMedium"
+			style="@style/brandon_reg"
+			android:visibility="visible" />
+		
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/space_1"
+			android:layout_below="@id/autoCompleteTextViewUserName"
+			android:background="@color/colorWhite" />
+		
+		<EditText
+			android:id="@+id/editTextPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/autoCompleteTextViewUserName"
+			android:layout_gravity="center|top"
+			android:background="@drawable/background_border_left"
+			android:drawableRight="@drawable/password"
+			android:drawablePadding="@dimen/drawablePadding"
+			android:hint="@string/hint_mpin"
+			android:imeOptions="actionDone"
+			android:inputType="numberPassword"
+			android:maxLength="@integer/int_4"
+			android:maxLines="@integer/max_lines_normal"
+			android:digits="@string/digits_number"
+			android:minHeight="@dimen/userName"
+			android:paddingLeft="@dimen/paddingLeft"
+			android:paddingTop="@dimen/paddingTop_Small"
+			android:paddingRight="@dimen/paddingRight"
+			android:textColor="@color/text_color"
+			android:textColorHint="@color/textHintColor"
+			style="@style/brandon_reg"
+			android:textSize="@dimen/textMedium"
+
+			android:visibility="visible">
+			
+			<requestFocus />
+		</EditText>
+		
+		<View
+			android:id="@+id/view1"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/space_1"
+			android:layout_below="@id/editTextPassword"
+			android:background="@color/colorWhite" />
+		
+
+		<TextView
+			android:id="@+id/textviewOtp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/view1"
+			android:layout_alignParentStart="true"
+			android:layout_marginLeft="@dimen/space_3"
+			android:layout_marginTop="@dimen/space_15"
+			android:text="@string/forgot_mpin"
+			style="@style/brandon_med"
+			android:textSize="@dimen/space_12"
+			android:textColor="@color/darkGray" />
+		<TextView
+			android:id="@+id/textviewForgot"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/view1"
+			android:layout_alignParentEnd="true"
+			android:layout_marginLeft="@dimen/space_3"
+			android:layout_marginTop="@dimen/space_15"
+			android:text="@string/verify_otp"
+			style="@style/brandon_med"
+			android:textSize="@dimen/space_12"
+			android:textColor="@color/darkGray" />
+		
+		<TextView
+			android:id="@+id/buttonLogin"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/editTextPassword"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="65dp"
+			android:background="@drawable/button_background"
+			android:gravity="center"
+			android:minHeight="@dimen/space_48"
+			android:text="@string/action_sign_in"
+			android:textAllCaps="true"
+			android:textColor="@color/colorWhite"
+			style="@style/brandon_blk"
+			android:textSize="@dimen/space_16" />
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/buttonLogin"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="20dp"
+			android:visibility="visible">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/newcompanyReg"
+				style="@style/brandon_reg"
+				android:textColor="@color/darkGray"
+				android:textSize="@dimen/space_11" />
+			
+			<TextView
+				android:id="@+id/textviewRegisterCompany"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/space_3"
+				android:text="@string/register"
+				style="@style/brandon_bld"
+				android:textColor="@color/darkGray" />
+		</LinearLayout>
+	</RelativeLayout>
+	</androidx.cardview.widget.CardView>
+</RelativeLayout>
+	<TextView
+		android:id="@+id/textViewBottom"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/space_20"
+		android:gravity="center"
+		android:text="@string/productDeveloped"
+		android:textColor="@color/logoBlue"
+		android:layout_alignParentBottom="true"
+		android:textSize="@dimen/space_12"
+		style="@style/brandon_blk" />
+
+</RelativeLayout>

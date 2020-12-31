@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorNormalBackground">
+
+    <RadioGroup
+        android:id="@+id/wavesradioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checkedButton="@+id/wavesradioButtonsalestrend"
+        android:gravity="center"
+        android:background="@color/newColorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <RadioButton
+            android:id="@+id/wavesradioButtonstatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:minHeight="@dimen/space_40"
+            style="@style/Radio_button"
+            android:textColor="@color/colorWhite"
+            android:text="@string/statistics" />
+
+        <RadioButton
+            android:id="@+id/wavesradioButtonsalestrend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            style="@style/Radio_button"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/sales_trend"
+            android:textColor="@color/colorWhite" />
+        <RadioButton
+            android:id="@+id/wavesradioButtonGroupby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            style="@style/Radio_button"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/group_by"
+            android:textColor="@color/colorWhite" />
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:id="@+id/wavesrelativeLayoutdate_Sup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wavesradioGroup">
+
+        <TextView
+            android:id="@+id/wavestextViewdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="@string/totalNoBill"
+            android:textStyle="bold"
+            android:textColor="@color/newColorPrimary"
+            android:layout_marginTop="@dimen/space_5"
+            android:padding="@dimen/space_5"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wavesimageviewdate"
+            android:layout_toLeftOf="@+id/wavestextViewdate"
+            android:padding="@dimen/space_5"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_calender"/>
+
+        <TextView
+            android:id="@+id/wavestextViewsup_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:text="@string/totalBillValue"
+            android:textColor="@color/newColorPrimary"
+            android:layout_below="@+id/wavestextViewdate"
+            android:layout_marginTop="@dimen/space_5"
+            android:padding="@dimen/space_5"
+            tools:ignore="NotSibling" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wavesimageviewsearch"
+            android:padding="@dimen/space_5"
+            android:layout_toLeftOf="@+id/wavestextViewsup_name"
+            android:layout_below="@+id/wavesimageviewdate"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_search"/>
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/framLayoutWaves"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/colorWhite"
+        android:layout_below="@id/wavesrelativeLayoutdate_Sup" />
+
+    <TextView
+        android:id="@+id/wavestextViewNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/space_12"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="@string/noBillOn"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="@dimen/space_10"
+        android:padding="@dimen/space_5"/>
+
+</RelativeLayout>

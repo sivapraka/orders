@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardMarginNormal"
+    card_view:cardBackgroundColor="@color/cardBackground"
+    card_view:cardCornerRadius="@dimen/cardCornerRadiusNormal"
+    card_view:cardElevation="@dimen/cardElevationNormal"
+    card_view:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:id="@+id/linearLayout"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="kilogram"
+            android:textColor="@color/newColorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewShortName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:background="@drawable/button_background"
+            android:textColor="@color/colorWhite"
+            android:text="@string/edit"
+            android:textSize="16sp" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/linearLayout"
+            android:background="@color/colorBlack"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

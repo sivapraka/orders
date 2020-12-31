@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutBottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/transparent"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardViewDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/newColorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginButtonLarge"
+                android:gravity="center"
+                android:text="@string/uom_add"
+                android:textColor="@color/newColorPrimary"
+                android:textSize="@dimen/textTitle"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewUOMName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitle"
+                android:layout_marginTop="@dimen/marginTopLarge"
+                android:background="@drawable/background_normal"
+                android:hint="@string/uom_name"
+                android:imeOptions="actionNext"
+                android:inputType="text|textFilter|textAutoComplete|textAutoCorrect|textPersonName"
+                android:maxLength="@integer/max_length_large"
+                android:maxLines="@integer/max_lines_normal"
+                android:minHeight="@dimen/textMinHeightNormal"
+                android:paddingStart="@dimen/paddingStartNormal"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/textMedium" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewUOMShortName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoCompleteTextViewUOMName"
+                android:layout_marginTop="@dimen/marginTopLarge"
+                android:background="@drawable/background_normal"
+                android:hint="@string/uom_short"
+                android:imeOptions="actionDone"
+                android:inputType="text|textAutoComplete|textAutoCorrect"
+                android:maxLength="@integer/max_length_large"
+                android:maxLines="@integer/max_lines_normal"
+                android:minHeight="@dimen/textMinHeightNormal"
+                android:paddingStart="@dimen/paddingStartNormal"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/textMedium" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoCompleteTextViewUOMShortName"
+                android:layout_marginTop="@dimen/marginButtonLarge">
+
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightRed"
+                    android:text="@string/cancel"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorDarkGray"
+                    android:text="@string/Save"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

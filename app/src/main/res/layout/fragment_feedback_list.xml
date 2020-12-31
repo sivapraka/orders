@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/colorNormalBackground">
+	<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+		android:id="@+id/swipeReferesh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerViewEnquiryList"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_above="@id/queryAdd"
+			android:layout_below="@id/relativeLayoutTotal"
+			android:layout_marginTop="5dp" />
+	</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+	
+	<TextView
+		android:id="@+id/ordertextViewNoData"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:layout_margin="@dimen/space_10"
+		android:gravity="center"
+		android:padding="@dimen/space_5"
+		android:text="@string/no_feedback"
+		android:textColor="@color/colorBlack"
+		android:textSize="@dimen/space_12"
+		android:visibility="gone" />
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/queryAdd"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/floattxt"
+		android:layout_alignParentEnd="true"
+		android:layout_gravity="bottom|end"
+		android:layout_margin="16dp"
+		android:src="@drawable/add"
+		app:backgroundTint="@color/newColorPrimary"
+		tools:ignore="UnknownId" />
+	
+	<TextView
+		android:id="@+id/floattxt"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_alignParentBottom="true"
+		android:visibility="invisible" />
+
+</RelativeLayout>

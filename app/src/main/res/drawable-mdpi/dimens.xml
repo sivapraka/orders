@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_drawer_width">260dp</dimen>
+<!-- Text Size-->
+    <dimen name="textNormal">12sp</dimen>
+    <dimen name="textMedium">14sp</dimen>
+    <dimen name="textLarge">16sp</dimen>
+    <dimen name="textExtraLarge">18sp</dimen>
+
+    <dimen name="layout_marginLeft">35dp</dimen>
+    <dimen name="layout_marginRight">35dp</dimen>
+    <dimen name="layout_width">300dp</dimen>
+    <dimen name="layout_marginTop">24dp</dimen>
+    <dimen name="layout_marginBottom">5dp</dimen>
+    <dimen name="drawablePadding">10dp</dimen>
+    <dimen name="marginNormal">1dp</dimen>
+    <dimen name="marginMedium">3dp</dimen>
+
+    <!--Item School Selection-->
+    <dimen name="paddingLeft">8dp</dimen>
+    <dimen name="paddingRight">8dp</dimen>
+    <dimen name="paddingTop">16dp</dimen>
+    <dimen name="paddingBottom">16dp</dimen>
+    <dimen name="marginStart">10dp</dimen>
+    <dimen name="marginLeft">10dp</dimen>
+    <dimen name="marginTop">4dp</dimen>
+
+    <!-- Item Stop and Route-->
+    <dimen name="cardElevation">3dp</dimen>
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="cardMarginNormal">1dp</dimen>
+
+
+    <dimen name="maxHeight">150dp</dimen>
+    <dimen name="maxWidth">150dp</dimen>
+
+</resources>

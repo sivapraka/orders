@@ -1,0 +1,59 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    android:background="@color/colorNormalBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewProductsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_address"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableRight="@drawable/ic_search"
+            android:hint="@string/product_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPostalAddress|textAutoComplete|text"
+            android:maxLength="@integer/max_length_large"
+            android:maxLines="@integer/max_lines_normal"
+            android:minHeight="@dimen/userName"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:paddingTop="@dimen/paddingTop_Small"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/textMedium"
+            android:visibility="gone" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewUOMList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_light_gray" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/newColorPrimary"
+        android:backgroundTint="@color/newColorPrimary"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

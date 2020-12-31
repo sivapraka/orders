@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/space_5"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="@color/colorWhite"
+
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/space_40"
+        android:background="@color/newColorPrimary"
+        android:gravity="center"
+        android:textSize="@dimen/space_20"
+        android:textColor="@color/colorWhite"
+        android:text="@string/select_option"/>
+
+    <TextView
+        android:id="@+id/takepic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_5"
+        android:textSize="@dimen/space_16"
+        android:gravity="center"
+        android:text="@string/take_Photo"/>
+
+    <TextView
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_5"
+        android:textSize="@dimen/space_16"
+        android:gravity="center"
+        android:text="@string/from_gallery"/>
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_5"
+        android:textSize="@dimen/space_16"
+        android:gravity="center"
+        android:text="@string/cancel"/>
+</LinearLayout>
+
+</RelativeLayout>

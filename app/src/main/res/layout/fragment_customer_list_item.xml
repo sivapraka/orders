@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="@dimen/cardElevation"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCustomerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="@dimen/space_5">
+
+        <ImageView
+            android:id="@+id/imageViewCustomerImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_marginStart="@dimen/space_10" />
+
+        <TextView
+            android:id="@+id/textViewCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_toRightOf="@+id/imageViewCustomerImage"
+            android:text="Bosch "
+            android:textStyle="bold"
+            android:textColor="@color/newColorPrimary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewCustomerCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCustomerName"
+            android:layout_toRightOf="@+id/imageViewCustomerImage"
+            android:layout_marginTop="3dp"
+            android:text="09A786875"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/space_5"
+            android:textColor="@color/centerColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageViewCustomerImage"
+            android:layout_below="@+id/textViewCustomerCode"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginTop="@dimen/space_3"
+            android:text="89786875"
+            android:layout_marginLeft="@dimen/space_5"
+            android:textColor="@color/centerColor"
+            android:textSize="@dimen/space_11" />
+
+        <TextView
+            android:id="@+id/textViewContactNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageViewCustomerImage"
+            android:layout_below="@+id/textViewEmail"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_marginTop="@dimen/space_3"
+           android:text="89786875"
+            android:textColor="@color/centerColor"
+            android:textSize="@dimen/space_11" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_direction"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/space_10"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

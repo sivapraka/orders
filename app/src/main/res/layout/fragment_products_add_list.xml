@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="@color/colorWhite">
+
+
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_4"
+            android:background="@color/newColorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:gravity="center"
+                android:text="@string/uom_add"
+                android:textColor="@color/newColorPrimary"
+                android:textSize="@dimen/textTitle"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewProductsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutBottom"
+        android:layout_gravity="center|top"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@drawable/bg_name"
+        android:drawableRight="@drawable/ic_search"
+        android:drawablePadding="@dimen/drawablePadding"
+        android:hint="@string/select_product"
+        android:imeOptions="actionDone"
+        android:inputType="textPostalAddress|textAutoComplete|text"
+        android:maxLength="@integer/max_length_large"
+        android:maxLines="@integer/max_lines_normal"
+        android:minHeight="@dimen/space_45"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingTop="@dimen/paddingTop_Small"
+        android:paddingRight="@dimen/paddingRight"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="@dimen/textMedium" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_6"
+        android:layout_below="@+id/autoCompleteTextViewProductsName"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="90">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewProductList"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/space_1"
+                android:layout_height="wrap_content"
+                android:background="@color/color_light_gray" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/space_45"
+            android:layout_weight="10">
+            <Button
+                android:id="@+id/buttonoffenceListCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorLightRed"
+                android:text="@string/cancel"
+                android:textColor="@color/colorWhite" />
+            <Button
+                android:id="@+id/buttonoffenceListOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorDarkGray"
+                android:text="@string/ok"
+               android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

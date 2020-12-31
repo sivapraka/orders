@@ -1,0 +1,434 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_light_gray"
+    tools:ignore="RtlHardcoded,VectorDrawableCompat"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/detail_card_marginEnd"
+                android:layout_marginStart="@dimen/detail_card_marginStart"
+                android:layout_marginTop="@dimen/marginTopExtraLarge"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                card_view:cardElevation="@dimen/cardElevation"
+                card_view:cardUseCompatPadding="true">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/newColorPrimary" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/detail_marginBottomLarge"
+                    android:layout_marginEnd="@dimen/detail_marginEnd"
+                    android:layout_marginStart="@dimen/detail_marginStartLarge"
+                    android:layout_marginTop="@dimen/detail_marginTopLarge">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextViewProductCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageViewProductImage"
+                        android:layout_marginTop="@dimen/marginTopLarge"
+                        android:background="@drawable/background_normal"
+                        android:drawableEnd="@drawable/ic_product_code"
+                        android:hint="@string/product_code"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textFilter|textAutoComplete|textAutoCorrect|textPersonName"
+                        android:maxLength="@integer/max_length_large"
+                        android:maxLines="@integer/max_lines_normal"
+                        android:minHeight="@dimen/textMinHeightNormal"
+                        android:paddingEnd="@dimen/paddingRight"
+                        android:paddingStart="@dimen/paddingStartNormal"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="@dimen/textMedium" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextViewProductName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/autoCompleteTextViewProductCode"
+                        android:layout_marginTop="@dimen/marginTopLarge"
+                        android:background="@drawable/background_normal"
+                        android:drawableRight="@drawable/ic_company_name"
+                        android:hint="@string/product_name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textFilter|textAutoComplete|textAutoCorrect|textPersonName"
+                        android:maxLength="@integer/max_length_large"
+                        android:digits="@string/digits"
+                        android:maxLines="@integer/max_lines_normal"
+                        android:minHeight="@dimen/textMinHeightNormal"
+                        android:paddingEnd="@dimen/paddingRight"
+                        android:paddingStart="@dimen/paddingStartNormal"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="@dimen/textMedium" />
+
+                    <TextView
+                        android:id="@+id/textViewChooseImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/autoCompleteTextViewProductName"
+                        android:text="Choose Product Image"
+                        android:textColor="@color/color_blue"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/buttonImageChoose"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/autoCompleteTextViewProductName"
+                        android:background="@drawable/button_background"
+                        android:text="Browse"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imageViewProductImage"
+                        android:layout_width="@dimen/space_80"
+                        android:layout_height="@dimen/space_80"
+                        android:layout_above="@id/layoutBottom"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/ic_customer_image"
+                        android:adjustViewBounds="true"
+                        tools:ignore="NotSibling" />
+
+                    <ImageView
+                        android:id="@+id/imageViewCamera"
+                        android:layout_width="@dimen/space_20"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_alignEnd="@+id/imageViewProductImage"
+                        android:layout_alignBottom="@id/imageViewProductImage"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:adjustViewBounds="true"
+                        card_view:srcCompat="@drawable/ic_camera" />
+
+                    <TextView
+                        android:id="@+id/textViewContactTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/buttonImageChoose"
+                        android:layout_marginLeft="@dimen/layout_marginLeft_small"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@string/roboto_regular"
+                        android:text="@string/contact_details"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_blue"
+                        android:textSize="@dimen/textExtraLarge"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/textViewTaxTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewContactTitle"
+                        android:layout_marginLeft="@dimen/layout_marginLeft_small"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@string/roboto_regular"
+                        android:text="@string/tax_details"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_blue"
+                        android:textSize="@dimen/textExtraLarge"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextViewUOMName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTaxTitle"
+                        android:layout_marginTop="@dimen/marginTopLarge"
+                        android:background="@drawable/background_normal"
+                        android:drawableRight="@drawable/ic_uom"
+                        android:hint="@string/uom"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textAutoCorrect|textAutoComplete"
+                        android:maxLength="@integer/max_length_medium"
+                        android:maxLines="@integer/max_lines_normal"
+                        android:digits="@string/digits_only"
+                        android:minHeight="@dimen/textMinHeightNormal"
+                        android:paddingEnd="@dimen/paddingRight"
+                        android:paddingStart="@dimen/paddingStartNormal"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="@dimen/textMedium" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextViewGSTNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/autoCompleteTextViewUOMName"
+                        android:layout_marginTop="@dimen/marginTopLarge"
+                        android:background="@drawable/background_normal"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/ic_gst"
+                        android:editable="false"
+                        android:focusable="true"
+                        android:hint="@string/choose_gst"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textAutoCorrect|textAutoComplete"
+                        android:minHeight="@dimen/textMinHeightNormal"
+                        android:paddingEnd="@dimen/paddingRight"
+                        android:paddingStart="@dimen/paddingStartNormal"
+                        android:maxLength="@integer/max_length_medium"
+                        android:digits="@string/digits_percent"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="@dimen/textMedium" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutTotalPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/autoCompleteTextViewGSTNo">
+
+                        <TextView
+                            android:id="@+id/textViewProductPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center|start"
+                            android:text="@string/product_total_price"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/textMedium" />
+
+                        <EditText
+                            android:id="@+id/editTextPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/marginTopLarge"
+                            android:background="@drawable/background_normal"
+                            android:hint="@string/product_price"
+                            android:imeOptions="actionDone"
+                            android:inputType="phone"
+                            android:maxLength="@integer/max_length_normal"
+                            android:maxLines="@integer/max_lines_normal"
+                            android:minHeight="@dimen/textMinHeightNormal"
+                            android:paddingEnd="@dimen/paddingRight"
+                            android:paddingStart="@dimen/paddingStartNormal"
+                            android:textColorHint="@color/colorPrimary"
+                            android:textSize="@dimen/textMedium"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/editTextExclusivePrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/marginTopLarge"
+                            android:background="@drawable/background_normal"
+                            android:hint="@string/product_price"
+                            android:imeOptions="actionDone"
+                            android:inputType="phone"
+                            android:maxLength="@integer/max_length_normal"
+                            android:maxLines="@integer/max_lines_normal"
+                            android:minHeight="@dimen/textMinHeightNormal"
+                            android:paddingEnd="@dimen/paddingRight"
+                            android:paddingStart="@dimen/paddingStartNormal"
+                            android:textColorHint="@color/colorPrimary"
+                            android:textSize="@dimen/textMedium"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textViewTaxModeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutTotalPrice"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="@dimen/layout_marginLeft_small"
+                        android:layout_marginTop="@dimen/marginTop"
+                        android:fontFamily="@string/roboto_regular"
+                        android:text="@string/tax_mode"
+                        android:textColor="@color/colorDark"
+                        android:textSize="@dimen/textMedium"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutTax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textViewTaxModeTitle">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layout_marginTopNormal"
+                            android:checkedButton="@+id/radioButtonExclusive"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButtonExclusive"
+                                style="@style/RadioButton"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/tax_exclusive" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonInclusive"
+                                style="@style/RadioButton"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/tax_inclusive" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/textViewProductTaxPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/editTextValue"
+                        android:layout_alignBottom="@+id/editTextValue"
+                        android:layout_alignStart="@+id/textViewTaxModeTitle"
+                        android:text="@string/product_tax_price"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textMedium" />
+
+                    <EditText
+                        android:id="@+id/editTextValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayoutTax"
+                        android:layout_marginTop="@dimen/marginTopLarge"
+                        android:layout_toEndOf="@+id/textViewTaxModeTitle"
+                        android:background="@drawable/background_normal"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Enter Value"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:minHeight="@dimen/textMinHeightNormal"
+                        android:paddingStart="@dimen/paddingStartNormal"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="@dimen/textMedium" />
+
+                    <TextView
+                        android:id="@+id/textViewProductTaxAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/editTextAmount"
+                        android:layout_alignBottom="@+id/editTextAmount"
+                        android:layout_alignStart="@+id/textViewProductTaxPrice"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/product_tax_value"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textMedium" />
+
+                    <EditText
+                        android:id="@+id/editTextAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/editTextValue"
+                        android:layout_below="@+id/editTextValue"
+                        android:layout_marginTop="@dimen/marginTopLarge"
+                        android:background="@drawable/background_normal"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Enter Tax amount"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:minHeight="@dimen/textMinHeightNormal"
+                        android:paddingStart="@dimen/paddingStartNormal"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="@dimen/textMedium" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextAmount"
+                        android:layout_marginTop="@dimen/marginTopLarge">
+
+                        <TextView
+                            android:id="@+id/textViewTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/totalAmount" />
+
+                        <TextView
+                            android:id="@+id/textViewTotalAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/space_20"
+                            android:layout_toRightOf="@+id/textViewTotal"
+                            android:maxWidth="180dp"
+                            android:text="" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="90"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/button_marginEnd"
+            android:layout_marginStart="@dimen/button_marginStart"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:minHeight="@dimen/buttonMinHeight"
+                android:padding="@dimen/paddingButtonNormal"
+                android:text="@string/Save"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textLarge"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardMarginNormal"
+    card_view:cardBackgroundColor="@color/card_background"
+    card_view:cardCornerRadius="@dimen/cardCornerRadius"
+    card_view:cardElevation="@dimen/cardElevation"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginNormal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textViewChallanNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLogo"
+            android:text="@string/previewChallanNo"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textMedium" />
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageViewLogo"
+            android:layout_alignStart="@+id/imageViewLogo"
+            android:layout_below="@+id/imageViewLogo"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textMedium" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewChallanNo"
+            android:text="@string/previewDateTime"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView0"
+            android:layout_alignStart="@+id/textView0"
+            android:layout_below="@+id/textView0"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewwOfficerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDate"
+            android:text="@string/previewOfficerName"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignStart="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewJurisdiction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewwOfficerName"
+            android:layout_marginTop="@dimen/layout_marginTopSmallMedium"
+            android:text="@string/previewJurisdiction"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewJurisdiction"
+            android:layout_alignBottom="@+id/textViewJurisdiction"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewJurisdiction"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewVehicleNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView18"
+            android:text="@string/previewVehicleNo"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView18"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewVehicleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewVehicleNo"
+            android:layout_marginTop="@dimen/layout_marginTopSmallMedium"
+            android:text="@string/previewVehicleName"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewVehicleName"
+            android:layout_alignBottom="@+id/textViewVehicleName"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewVehicleAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewVehicleName"
+            android:text="@string/previewVehicleAddress"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="@dimen/marginTop"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewLicenceNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView19"
+            android:layout_marginTop="@dimen/layout_marginTopSmallMedium"
+            android:text="@string/previewLicenceNo"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewLicenceNo"
+            android:layout_alignBottom="@+id/textViewLicenceNo"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewLicenceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLicenceNo"
+            android:text="@string/previewLicenceName"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/textView7"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewLicenceAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLicenceName"
+            android:layout_marginTop="@dimen/layout_marginTopSmallMedium"
+            android:text="@string/previewLicenceAddress"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_below="@+id/textView8"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="@dimen/marginTop"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView20"
+            android:text="@string/tempPara"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewSpotFine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView21"
+            android:layout_marginTop="@dimen/layout_marginTopSmallMedium"
+            android:text="@string/previewSpotFine"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView21"
+            android:layout_toEndOf="@+id/textViewSpotFine"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewPaymentMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSpotFine"
+            android:text="@string/previewPaymentMode"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_below="@+id/textView11"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPaymentMode"
+            android:layout_marginTop="@dimen/layout_marginTopSmallMedium"
+            android:text="@string/previewPayment"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewPayment"
+            android:layout_alignBottom="@+id/textViewPayment"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPayment"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewRemarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView22"
+            android:text="@string/previewRemarks"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_below="@+id/textView22"
+            android:text="@string/tempPara"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewRemarksPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_alignParentStart="true"
+            android:text="@string/previewRemarksPhoneNo"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_below="@+id/textView14"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRemarksPhoneNo"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewImpound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView23"
+            android:layout_marginTop="@dimen/layout_marginTopSmallMedium"
+            android:text="@string/previewImpound"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_below="@+id/textView23"
+            android:text="@string/tempPara"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textViewImpoundPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textViewJurisdiction"
+            android:layout_below="@+id/textView16"
+            android:text="@string/previewImpoundPlace"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewImpoundPlace"
+            android:layout_alignBottom="@+id/textViewImpoundPlace"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignStart="@+id/textView16"
+            android:text="@string/tempPara"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <ImageView
+            android:id="@+id/imageView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView17"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/layout_marginTopMedium"
+
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView0"
+            android:gravity="center"
+            android:text="@string/violator"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView0"
+            android:layout_alignStart="@+id/imageView0"
+            android:layout_below="@+id/textView24"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/layout_marginTopMedium"
+         />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:gravity="center"
+            android:text="@string/temp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textNormal" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

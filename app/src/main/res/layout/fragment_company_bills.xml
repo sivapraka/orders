@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/detail_card_marginStart"
+                android:layout_marginEnd="@dimen/detail_card_marginEnd"
+                android:layout_marginTop="@dimen/marginTopExtraLarge"
+
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                card_view:cardElevation="@dimen/cardElevation"
+                card_view:cardUseCompatPadding="true">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/newColorPrimary"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/detail_marginStartLarge"
+                android:layout_marginEnd="@dimen/detail_marginEnd"
+                android:layout_marginTop="@dimen/detail_marginTopLarge"
+                android:layout_marginBottom="@dimen/detail_marginBottomLarge">
+
+                <TextView
+                    android:id="@+id/textViewOrderBillNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editTextGSTNo"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="22dp"
+                    android:maxLines="1"
+                    android:text="ORDER BILL NO :"
+                    android:textColor="@color/colorDark"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editTexOrderBillNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textViewOrderBillNo"
+                    android:layout_alignBottom="@+id/textViewOrderBillNo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/background_normal"
+                    android:hint="Enter Order Bill No"
+                    android:digits="@string/digits"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoCorrect|textAutoComplete|text"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textViewSalesBillNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editTexSalesBillNo"
+                    android:layout_alignBottom="@+id/editTexSalesBillNo"
+                    android:layout_alignStart="@+id/textViewOrderBillNo"
+                    android:maxLines="1"
+                    android:text="SALES  BILL NO :"
+                    android:textColor="@color/colorDark"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editTexSalesBillNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/editTexOrderBillNo"
+                    android:layout_below="@+id/editTexOrderBillNo"
+                    android:layout_marginTop="@dimen/marginTopLarge"
+                    android:background="@drawable/background_normal"
+                    android:hint="Enter Sales Bill No"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoCorrect|textAutoComplete|text"
+                    android:maxLength="50"
+                    android:digits="@string/digits"
+                    android:maxLines="1"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:minHeight="@dimen/textMinHeightNormal"
+                    android:paddingEnd="@dimen/paddingRight"
+                    android:paddingStart="@dimen/paddingStartNormal"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_weight="90">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/button_marginEnd"
+            android:layout_marginStart="@dimen/button_marginStart"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:minHeight="@dimen/buttonMinHeight"
+                android:padding="@dimen/paddingButtonNormal"
+                android:text="@string/Save"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textLarge"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

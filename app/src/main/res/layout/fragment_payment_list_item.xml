@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/space_4"
+    app:cardElevation="@dimen/cardElevation"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutProductList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutbill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5">
+
+            <ImageView
+                android:id="@+id/imageViewProduct"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/textViewProductName"
+                android:layout_margin="3dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="40dp"
+                android:layout_toEndOf="@+id/imageViewProduct"
+                android:text="Bosch"
+                style="@style/brandon_bld"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/space_14" />
+
+            <ImageView
+                android:id="@+id/image_view_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/space_5"
+                app:srcCompat="@drawable/ic_cancel"/>
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/image_view_cancel"
+                android:layout_marginEnd="10dp"
+                android:text="rt"
+                android:textColor="@color/colorLightGray"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relativeLayoutbill"
+            android:layout_marginBottom="1dp"
+            android:layout_height="35dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/product_code"
+                android:id="@+id/textViewProductCount"
+                android:layout_marginStart="@dimen/space_10"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/textNormal"
+                style="@style/brandon_reg"
+                android:layout_alignParentStart="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="product Count "
+                style="@style/brandon_reg"
+                android:id="@+id/textViewProductPrice"
+                android:layout_marginEnd="@dimen/space_10"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/textNormal"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_ws_flash_screen"
+    tools:context=".activity.CompanySelectionActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_28"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewUserImage"
+            android:layout_width="@dimen/space_150"
+            android:layout_height="@dimen/space_150"
+            android:minHeight="@dimen/space_300"
+            android:minWidth="@dimen/space_300"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_sample_logo" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wellcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeSymb"
+        style="@style/brandon_bld"
+        android:layout_below="@id/topLayout"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/newColor"
+        android:textSize="@dimen/space_22" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/space_10"
+        android:layout_below="@id/wellcome"
+        app:cardElevation="@dimen/space_3"
+        android:layout_marginRight="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_30"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_20">
+
+                <EditText
+                    android:id="@+id/otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/borderblack"
+                    android:inputType="number"
+                    android:digits="@string/digits_number"
+                    android:maxLength="@integer/int_4"
+                    android:paddingTop="@dimen/space_15"
+                    android:paddingBottom="@dimen/space_15"
+                    android:hint="@string/enterOtp"
+                    android:paddingLeft="@dimen/space_12"
+                    android:singleLine="true"
+                    android:textColor="@color/darkGray"
+                    android:textSize="@dimen/space_12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/padd_10"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="@dimen/padd_10"
+                android:layout_marginBottom="@dimen/space_20"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:minHeight="@dimen/space_48"
+                android:text="@string/action_verify"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/space_16"
+                android:textStyle="bold"  />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_20">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkGray"
+                    android:textSize="@dimen/space_11"
+                    android:text="@string/newcompanyReg"/>
+
+                <TextView
+                    android:id="@+id/textviewRegisterCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkGray"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:text="@string/register"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_20"
+        android:gravity="center"
+        android:text="@string/productDeveloped"
+        android:textColor="@color/logoBlue"
+        android:textSize="@dimen/space_12"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

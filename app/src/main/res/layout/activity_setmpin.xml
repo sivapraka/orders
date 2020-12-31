@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_ws_flash_screen"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginRight="@dimen/space_30"
+            app:cardCornerRadius="@dimen/space_10"
+            app:cardElevation="@dimen/space_3"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_3"
+                android:layout_marginBottom="@dimen/space_20"
+                android:background="@color/colorWhite">
+
+                <ImageView
+                    android:id="@+id/imageViewUserImage"
+                    android:layout_width="@dimen/size_160dp"
+                    android:layout_height="@dimen/space_80"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/welcomeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewUserImage"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:gravity="center"
+                    android:text="@string/welcomePage"
+                    android:textColor="@color/newColor"
+                    android:textSize="@dimen/space_30"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoCompleteTextViewUserName"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/background_border_left"
+                    android:digits="@string/digits_number"
+                    android:drawableRight="@drawable/password"
+                    android:drawablePadding="@dimen/drawablePadding"
+                    android:hint="@string/hint_mpin"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberPassword"
+                    android:maxLength="@integer/max_lines_large"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:minHeight="@dimen/userName"
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:paddingRight="@dimen/paddingRight"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/textHintColor"
+                    android:textSize="@dimen/textMedium"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:layout_below="@id/editTextPassword"
+                    android:background="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/editTextconformPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextPassword"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/background_border_left"
+                    android:digits="@string/digits_number"
+                    android:drawableRight="@drawable/password"
+                    android:drawablePadding="@dimen/drawablePadding"
+                    android:hint="@string/hint_conform_mpin"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberPassword"
+                    android:maxLength="@integer/max_lines_large"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:minHeight="@dimen/userName"
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:paddingRight="@dimen/paddingRight"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/textHintColor"
+                    android:textSize="@dimen/textMedium"
+                    android:visibility="visible">
+
+                    <requestFocus />
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:layout_below="@id/editTextconformPassword"
+                    android:background="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextconformPassword"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/padd_10"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="@dimen/padd_10"
+                    android:layout_marginBottom="@dimen/space_20"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:minHeight="@dimen/space_48"
+                    android:text="@string/submit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/space_16"
+                    style="@style/brandon_blk" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_20"
+        android:gravity="center"
+        android:text="@string/productDeveloped"
+        android:textColor="@color/logoBlue"
+        android:textSize="@dimen/space_12"
+        style="@style/brandon_blk"/>
+
+</RelativeLayout>

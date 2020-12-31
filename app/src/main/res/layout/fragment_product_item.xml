@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_gravity="top|center"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="@dimen/cardElevation"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutProductList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@+id/autoCompleteTextViewProductName"
+       >
+
+        <TextView
+            android:id="@+id/textViewProductTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginEnd="190dp"
+            android:text="Breakfast foods. Cream of Wheat"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextQty"
+            android:layout_alignBottom="@+id/editTextQty"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/editTextQty"
+            android:text="10000"
+            android:maxWidth="70dp"
+            android:maxLines="2"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewSubTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imageViewRemove"
+            android:maxLines="2"
+            android:layout_marginEnd="5dp"
+            android:maxWidth="70dp"
+            android:padding="10dp"
+            android:text="54000.86886860"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/textViewSubTotal"
+            android:maxLength="3"
+            android:maxLines="@integer/max_lines_medium"
+            android:maxWidth="80dp"
+            android:padding="10dp"
+            android:text="10"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageViewRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textViewPrice"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/remove_black" />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

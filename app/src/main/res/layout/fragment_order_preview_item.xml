@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_gravity="top|center"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="@dimen/cardElevation"
+    app:cardUseCompatPadding="true">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp">
+
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_toLeftOf="@+id/textViewQty"
+        android:gravity="start|center"
+        android:text="Product"
+        android:minHeight="@dimen/space_25"
+        android:textSize="@dimen/space_14"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/textViewQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:maxLines="@integer/max_lines_normal"
+        android:layout_marginEnd="5dp"
+        android:maxWidth="100dp"
+        android:text="Qty"
+        android:minHeight="@dimen/space_25"
+        android:textSize="@dimen/space_14"
+        android:textColor="@color/colorBlack" />
+
+
+
+</RelativeLayout>
+
+    <!--
+    </android.support.v7.widget.CardView>-->

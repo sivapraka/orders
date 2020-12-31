@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="@color/color_light_gray">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSelection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:visibility="gone"
+        android:layout_above="@id/navigation_main">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:background="@drawable/bg_address"
+            android:drawablePadding="@dimen/drawablePadding"
+            android:drawableRight="@drawable/ic_search"
+            android:hint="@string/cus_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPostalAddress|textAutoComplete|text"
+            android:maxLength="@integer/max_length_large"
+            android:maxLines="@integer/max_lines_normal"
+            android:minHeight="@dimen/userName"
+            android:paddingLeft="@dimen/paddingLeft"
+            android:paddingRight="@dimen/paddingRight"
+            android:paddingTop="@dimen/paddingTop_Small"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/textMedium"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_below="@+id/autoCompleteTextViewCustomerName"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ledgerBal"/>
+
+                <TextView
+                    android:id="@+id/textViewBal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_toRightOf="@id/textView1"/>
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView1"
+                    android:text="@string/lastRcpt"/>
+
+                <TextView
+                    android:id="@+id/textViewRcpt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView1"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_toRightOf="@id/textView2"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dt"/>
+
+                <TextView
+                    android:id="@+id/textViewBalDt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_toRightOf="@id/textView3"/>
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView3"
+                    android:text="@string/dt"/>
+
+                <TextView
+                    android:id="@+id/textViewRcptDt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_below="@id/textView3"
+                    android:layout_toRightOf="@id/textView4"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@drawable/background_edittext"
+            android:layout_below="@+id/linearLayoutBalance"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:minHeight="@dimen/space_40"
+            android:textSize="@dimen/space_16"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCustomerList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_below="@+id/next"
+            android:background="@color/color_light_gray" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/relativeLayoutCustomDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/space_5"
+    android:layout_marginRight="@dimen/space_5"
+    android:minHeight="@dimen/space_30">
+
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/space_30"
+        android:textStyle="bold"
+        android:text="xdscs"
+        android:gravity="center"
+        android:textColor="@color/newColorPrimary"
+        android:textSize="@dimen/space_16"
+        android:minHeight="@dimen/space_30"/>
+
+    <TextView
+        android:id="@+id/ledgerbalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:minWidth="@dimen/space_30"
+        android:textSize="@dimen/space_12"
+        android:visibility="gone"
+        android:text="zdsddsd"
+        android:gravity="center"
+        android:minHeight="@dimen/space_30"/>
+</RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/framLayoutCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_below="@id/relativeLayoutCustomDetails"
+        android:layout_above="@id/view">
+    </FrameLayout>
+<View
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_1"
+    android:layout_above="@id/bottom_navigation"
+    android:background="@color/newColor"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:visibility="gone"
+        app:itemIconTint="@null"
+        app:layout_behavior="BottomNavigationBehavior"
+        app:itemTextColor="@color/newColor"
+        app:menu="@menu/menu_bottom_navigation" />
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

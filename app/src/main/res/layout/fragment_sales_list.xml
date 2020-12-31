@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorNormalBackground">
+
+    <RadioGroup
+        android:id="@+id/salesradioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checkedButton="@+id/salesradioButtonAllBills"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/newColorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <RadioButton
+            android:id="@+id/salesradioButtonAllBills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:minHeight="@dimen/space_40"
+            style="@style/Radio_button"
+            android:textColor="@color/colorWhite"
+            android:text="@string/allBills" />
+
+        <RadioButton
+            android:id="@+id/salesradioButtonCancelBills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            style="@style/Radio_button"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/cancelBills"
+            android:textColor="@color/colorWhite" />
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/salesradioGroup">
+
+        <TextView
+            android:id="@+id/salestextViewBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="@string/ledgerBal"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+        <TextView
+            android:id="@+id/salestextViewTotalBills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:text="0"
+            android:minWidth="@dimen/space_30"
+            android:background="@color/colorGreen"
+            android:layout_toEndOf="@id/salestextViewBill"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+        <TextView
+            android:id="@+id/salestextViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/date"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@id/salestextViewTotalBillValue"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_10"
+            android:padding="@dimen/space_5"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/salestextViewTotalBillValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:minWidth="@dimen/space_30"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="0"
+            android:visibility="gone"
+            android:background="@color/colorGreen"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSales"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayoutTotal"
+        android:layout_above="@id/salesAdd"
+        android:layout_marginBottom="@dimen/space80"
+        android:layout_marginTop="@dimen/space_4" />
+
+    <TextView
+        android:id="@+id/salestextViewNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/space_12"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="@string/noBillOn"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="@dimen/space_10"
+        android:padding="@dimen/space_5"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/salesAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:visibility="gone"
+        app:backgroundTint="@color/newColorPrimary"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/add" />
+
+</RelativeLayout>

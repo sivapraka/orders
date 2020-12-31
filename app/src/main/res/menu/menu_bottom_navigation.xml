@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_sales"
+        android:icon="@drawable/ic_bills"
+        android:title="@string/report"/>
+    <item
+        android:id="@+id/action_payment"
+        android:icon="@drawable/ic_payment"
+        android:title="@string/pay"/>
+    <item
+        android:id="@+id/action_order"
+        android:icon="@drawable/ic_order"
+        android:title="@string/order"/>
+    <item
+        android:id="@+id/action_return"
+        android:icon="@drawable/ic_return"
+        android:title="@string/returns"/>
+    <item
+        android:id="@+id/action_replacement"
+        android:icon="@drawable/ic_replacement"
+        android:title="@string/replacement"/>
+</menu>

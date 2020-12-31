@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_5"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="edgfdfdnhfdnfngngfng"
+            android:layout_toLeftOf="@id/pending"
+            android:minWidth="@dimen/space_50"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_weight="60"
+            />
+
+        <TextView
+            android:id="@+id/pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:layout_marginRight="@dimen/space_50"
+            android:minWidth="@dimen/space_60"
+            android:layout_toLeftOf="@id/replaceQty"
+            android:layout_weight="20"
+            />
+
+        <TextView
+            android:id="@+id/replaceQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:maxWidth="@dimen/space_30"
+            android:text=""
+            android:minWidth="@dimen/space_60"
+            android:layout_weight="20"
+            />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/colorNormalBackground"
+        android:layout_below="@+id/replaceQty"
+        android:layout_marginTop="@dimen/space_5"
+        />
+
+    </RelativeLayout>

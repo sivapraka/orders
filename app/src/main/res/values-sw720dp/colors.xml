@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="actionBarColor">#009CDE</color>
+    <color name="actionBarColorDark">#0081B7</color>
+    <color name="color_light_gray">#ecede8</color>
+    <color name="color_gold">#ffd800</color>
+<color name="card_background">#e9e4e4</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="color_blue">#0e67ec</color>
+    <color name="color_light_blue">#6ccee9</color>
+    <color name="startColor">#786b6b</color>
+    <color name="centerColor">#646c73</color>
+    <color name="endColor">#cdd3d6</color>
+    <color name="colorBlack">#000000</color>
+    <color name="cardBackground">#ffffff</color>
+    <color name="menuStartColor">#484444</color>
+    <color name="menuCenterColor">#646c73</color>
+    <color name="menuEndColor">#393a3b</color>
+
+    <color name="colorRed">#fc0022</color>
+    <color name="textHintColor">#bcbfb4</color>
+
+    <!-- Radio Button-->
+    <color name="color_payment">#21ea32</color>
+    <color name="smokyBlack">#100c08</color>
+
+    <!-- Address  Background-->
+    <color name="startColorAddress">#cce8ed</color>
+    <color name="centerColorAddress">#8bb5d7</color>
+    <color name="endColorAddress">#f2f2f2</color>
+
+</resources>

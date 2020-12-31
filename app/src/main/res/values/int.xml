@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="max_length_normal">10</integer>
+    <integer name="max_length_phone">20</integer>
+    <integer name="max_length_medium">25</integer>
+    <integer name="max_length_large">40</integer>
+    <integer name="max_length">100</integer>
+    <integer name="max_length_medium_normal">200</integer>
+    <integer name="max_length_extra_large">400</integer>
+    <integer name="max_length_small">3</integer>
+    <integer name="max_lines_normal">1</integer>
+    <integer name="max_lines_medium">2</integer>
+    <integer name="max_lines_large">4</integer>
+    <integer name="max_lines_extra_large">5</integer>
+    <integer name="int_50">50</integer>
+    <integer name="int_10">10</integer>
+    <integer name="int_100">100</integer>
+    <integer name="int_15">15</integer>
+    <integer name="int_4">4</integer>
+
+    <!-- PRINTER-->
+    <integer name="printer_text_title_normal">35</integer>
+    <integer name="printer_text_body_normal">30</integer>
+
+    <!-- Signature-->
+    <integer name="signature_image_height">200</integer>
+    <integer name="signature_image_width">200</integer>
+</resources>

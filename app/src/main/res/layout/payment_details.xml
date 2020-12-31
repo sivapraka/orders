@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorDarkGray"
+    android:padding="@dimen/space_5"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/detail_card_marginStart"
+        android:layout_marginTop="@dimen/marginTopExtraLarge"
+        android:layout_marginEnd="@dimen/detail_card_marginEnd"
+        card_view:cardBackgroundColor="@color/colorWhite"
+        card_view:cardCornerRadius="@dimen/space_20"
+        card_view:cardElevation="@dimen/cardElevation"
+        card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_15"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/paydetailslinearlay">
+
+    <TextView
+        android:id="@+id/paydetailstextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/paymentdetails"
+        android:textSize="@dimen/space_20"
+        android:textStyle="bold"
+        android:textColor="@color/newColorPrimarybottom"
+        android:gravity="center" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_below="@+id/paydetailstextView"
+        android:background="@drawable/dashline"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_height="wrap_content"
+        android:text="@string/paymentdetamount"
+        android:textSize="@dimen/space_12"
+        android:textColor="@color/LightGray"/>
+
+    <TextView
+        android:id="@+id/paypreamounttextView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="$0"
+        android:textStyle="bold"
+        android:textSize="@dimen/space_30"
+        android:textColor="@color/newColorPrimarybottom"/>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/paymentcashlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paydetailslinearlay"
+            android:layout_alignParentStart="true"
+            tools:ignore="UnknownId">
+
+            <TextView
+                android:id="@+id/paydatetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15"
+                android:text="@string/paymentdetdate"
+                android:textColor="@color/LightGray"
+                android:textSize="@dimen/space_12" />
+
+            <TextView
+                android:id="@+id/currentdatetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paydatetextview"
+                android:text="13/7/19"
+                android:textColor="@color/newColorPrimarybottom"
+                android:textSize="@dimen/space_14" />
+
+            <TextView
+                android:id="@+id/timetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/space_15"
+                android:layout_toLeftOf="@+id/paydatetextview"
+                android:text="@string/paymentdettime"
+                android:textColor="@color/LightGray"
+                android:textSize="@dimen/space_12" />
+
+            <TextView
+                android:id="@+id/currenttimetdatetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timetextview"
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@+id/currentdatetextview"
+                android:text=""
+                android:textColor="@color/newColorPrimarybottom"
+                android:textSize="@dimen/space_14" />
+
+            <ImageView
+                android:id="@+id/customerimageView"
+                android:layout_width="@dimen/space_28"
+                android:layout_height="@dimen/space_28"
+                android:layout_below="@+id/currenttimetdatetextview"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/space_15"
+                android:layout_toLeftOf="@+id/paidbytextview"
+                app:srcCompat="@drawable/ic_paid_by"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/paidbytextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentdatetextview"
+                android:layout_marginTop="@dimen/space_15"
+                android:text="@string/payment_key"
+                android:textColor="@color/LightGray"
+                android:textSize="@dimen/space_12" />
+
+            <TextView
+                android:id="@+id/totextviewc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paidbytextview"
+                android:text="Ms"
+                android:textColor="@color/newColorPrimarybottom"
+                android:textSize="@dimen/space_14" />
+
+            <ImageView
+                android:id="@+id/cashorchequeimageView"
+                android:layout_width="@dimen/space_28"
+                android:layout_height="@dimen/space_28"
+                android:layout_below="@+id/customerimageView"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="28dp"
+                android:layout_toLeftOf="@+id/cash_or_chequetext"
+                app:srcCompat="@drawable/ic_cash"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/paymentmethodtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totextviewc_name"
+                android:layout_marginTop="@dimen/space_15"
+                android:text="@string/paymentdetpaymethod"
+                android:textColor="@color/LightGray"
+                android:textSize="@dimen/space_12" />
+
+            <TextView
+                android:id="@+id/cash_or_chequetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paymentmethodtxt"
+                android:text="Cash"
+                android:textColor="@color/newColorPrimarybottom"
+                android:textSize="@dimen/space_14" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/paymentprecheque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/paymentcashlayout">
+
+            <TextView
+                android:id="@+id/checquenotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paymentdetchequeno"
+                android:textSize="@dimen/space_12"
+                android:layout_marginTop="@dimen/space_15"
+                android:textColor="@color/LightGray"/>
+
+            <TextView
+                android:id="@+id/autochecquenotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checquenotxt"
+                android:text="brbrgjbm"
+                android:textSize="@dimen/space_14"
+                android:textColor="@color/newColorPrimarybottom"/>
+
+            <TextView
+                android:id="@+id/checquedatetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@+id/checquenotxt"
+                android:text="@string/paymentdetchequedate"
+                android:layout_marginTop="@dimen/space_15"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/LightGray"/>
+
+            <TextView
+                android:id="@+id/autochecquedatetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/checquedatetxt"
+                android:layout_toLeftOf="@+id/autochecquenotxt"
+                android:text="15/7/19"
+                android:textSize="@dimen/space_14"
+                android:textColor="@color/newColorPrimarybottom"/>
+
+            <TextView
+                android:id="@+id/bankdetailtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autochecquenotxt"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/space_15"
+                android:text="@string/paymentdetbankdet"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/LightGray" />
+
+            <TextView
+                android:id="@+id/autobankdetailtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bankdetailtxt"
+                android:text="SBI"
+                android:textSize="@dimen/space_14"
+                android:textColor="@color/newColorPrimarybottom"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

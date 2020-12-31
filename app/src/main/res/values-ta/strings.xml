@@ -1,0 +1,488 @@
+<resources>
+    <string name="app_name">WS Customer</string>
+    <string name="notification_channel_id">default</string>
+    <string name="products">தயாரிப்புகள்</string>
+    <string name="items">பொருட்களை</string>
+    <string name="choose_product">தயாரிப்பு தேர்வு</string>
+    <string name="select_product"> தயாரிப்பு தேட இங்கே கிளிக் செய்க</string>
+    <string name="click_search">Click here to Search</string>
+    <string name="connect">Connect</string>
+    <string name="qr_search">Scan</string>
+    <string name="trip_start">பயணத் தொடக்கம்</string>
+    <string name="Customer">வாடிக்கையாளர்</string>
+    <string name="bills">பில்கள்</string>
+    <string name="Payment">பெமென்ட்</string>
+    <string name="Orderrrr">ஆர்டர்கள்</string>
+    <string name="report">இன்வாய்ஸ்</string>
+    <string name="noReport">இன்வாய்ஸ் இல்லை</string>
+    <string name="trip_end">பயண முடிவு</string>
+    <string name="Logout">வெளியேறு</string>
+    <string name="home">முகப்பு</string>
+    <string name="Customers">வாடிக்கையாளர்கள்</string>
+    <string name="subTotal">Sub Total :</string>
+    <string name="scheme">திட்டம் :</string>
+    <string name="select_device">Select a device</string>
+    <string name="select_option">Select option</string>
+    <string name="scanning">Scanning for devices...</string>
+    <string name="ble_not_supported">Bluetooth Low Energy not supported</string>
+    <string name="scan">Scan</string>
+    <string name="paired">paired</string>
+    <string name="logout">நீங்கள் நிச்சயமாக வெளியேற விரும்புகிறீர்களா?</string>
+    <string name="yes">ஆம்</string>
+    <string name="alert_remove">Are you sure to remove the Entry?</string>
+    <string name="alert_add">Are you sure to add the Entry?</string>
+    <string name="productCount">Product count :</string>
+    <string name="productPrice">Product price :</string>
+    <string name="bill">Bill :</string>
+    <string name="company_name">Company Name *</string>
+    <string name="email_address">மின்னஞ்சல் </string>
+    <string name="company_address">Company Address *</string>
+    <string name="contact_details">Contact Details  *</string>
+    <string name="contact_person">Contact Person Name *</string>
+    <string name="contact_mobileno">Mobile No *</string>
+    <string name="tax_details">Tax Details *</string>
+    <string name="tax_name">Tax Name *</string>
+    <string name="gst">GST</string>
+    <string name="edit">Edit</string>
+    <string name="levelOne">Level One</string>
+    <string name="levelTwo">Level Two</string>
+    <string name="levelThree">Level Three</string>
+    <string name="update">மேம்படுத்தல்</string>
+    <string name="download">Download</string>
+    <string name="tax_percentage">Percentage *</string>
+    <string name="product_code">Product Code</string>
+    <string name="uom">Choose UOM</string>
+    <string name="tax_mode">Choose Tax Mode</string>
+    <string name="choose_tax">Choose Tax</string>
+    <string name="tax_exclusive">Exclusive</string>
+    <string name="tax_inclusive">Inclusive</string>
+    <string name="customer_code">Customer Code</string>
+    <string name="choose_customer">வாடிக்கையாளரைத் தேர்வுசெய்க</string>
+    <string name="address_details">முகவரி விவரங்கள்</string>
+    <string name="street">Street</string>
+    <string name="city">City</string>
+    <string name="region">Region</string>
+    <string name="region_no">Pleace enter region</string>
+    <string name="region_alredy">Region already added</string>
+    <string name="addLevel1">Pleace add region in Level 1</string>
+    <string name="addLevel2">Pleace add district in Level 2</string>
+    <string name="postcode">Postal Code</string>\
+    <string name="uom_name">Enter UOM Name</string>
+    <string name="uom_short">Enter UOM Short Name</string>
+    <string name="gst_no">Enter GSTIN Number</string>
+    <string name="product_price">Enter product price</string>
+    <string name="product_total_price">Price</string>
+    <string name="product_tax_price">Tax Price</string>
+    <string name="product_tax_value">Tax Amount</string>
+
+    <string name="state_name">Choose State Name</string>
+    <string name="customer">வாடிக்கையாளரைத் தேர்ந்தெடுக்க தேடல் ஐகானைக் கிளிக் செய்க</string>
+    <string name="next">அடுத்தது</string>
+    <string name="previous">முந்தையது</string>
+
+    <string name="total_pay">மொத்த பெமென்ட்</string>
+    <string name="bill_no">Bill No</string>
+    <string name="totalAmount">Total Amount</string>
+    <string name="choose_gst">Choose GST</string>
+    <string name="progress">பதிவேறுகிறது, காத்திருக்கவும்</string>
+    <string name="fetch">Fetching data please wait…</string>
+
+    <string name="user_name">பயனர்பெயர்</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">உள் நுழை</string>
+    <string name="action_ok">சரி</string>
+    <string name="action_verify">சரிபார்க்கவும்</string>
+    <string name="customer_name">Customer  Name *</string>
+    <string name="cus_name">வாடிக்கையாளர் பெயர்</string>
+    <string name="tax">Tax</string>
+    <string name="uom_add">UOM</string>
+    <string name="product_name">பொருளின் பெயர் </string>
+    <string name="productName">product name</string>
+    <string name="price">price</string>
+    <string name="quantity">அளவு</string>
+    <string name="temp">Temp</string>
+    <!-- ... is replaced by &#8230;-->
+    <string name="printer_binding">Service binding &#8230;</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_password">கடவுச்சொல்</string>
+    <string name="hint_conform_password">Conform Password</string>
+    <string name="male">Male</string>
+    <string name="female">Fe-Male</string>
+
+    <string name="btn_link_login">Get SIGN</string>
+    <string name="hint_dob">D.O.B</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_new_challan">New Challan</string>
+    <string name="nav_item_view_history">View History</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_new_challan</item>
+        <item>@string/nav_item_view_history</item>
+    </string-array>
+    <string name="title_viewHistory">View History</string>
+    <string name="title_friends">New Challan</string>
+    <string name="title_home">முகப்பு</string>
+
+    <string name="title_customer">Customer</string>
+    <!-- NEW Challan-->
+    <string name="challan_details">Challan  Details:</string>
+    <string name="challanno">Challan No</string>
+    <string name="current_date">Current Date</string>
+    <string name="officer">Officer Name *</string>
+    <string name="jurisdiction">Jurisdiction *</string>
+
+    <string name="vehicle_details">Vehicle Details *</string>
+    <string name="vehicleno">Vehicle No *</string>
+    <string name="vehicle_name">Vehicle Name *</string>
+    <string name="vehicle_address">Vehicle Address *</string>
+
+    <string name="driver_details">Driver  Details *</string>
+    <string name="licenseno">License No *</string>
+    <string name="license_name">License Name *</string>
+    <string name="license_address">License  Address *</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="action_details">Action  Taken *</string>
+    <string name="spot_fine">Spot Fine Collected *</string>
+    <string name="payment"> Choose Payment Mode * </string>
+    <string name="fine_amount">Amount in \u20A8 *</string>
+    <string name="rs">\u20A8</string>
+    <string name="cash">CASH</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="cheque_amount">Cheque Amount</string>
+    <string name="unpaid">UNPAID</string>
+    <string name="paid">தொகை</string>
+    <string name="court">COURT</string>
+    <string name="remarks_details">Remarks Details *</string>
+    <string name="remarks">Remarks *</string>
+    <string name="phoneno">Phone No *</string>
+    <string name="impound_details">Impound Details *</string>
+    <string name="impound">Impound *</string>
+    <string name="impound_location">Impound  Location *</string>
+    <string name="offence_details">Offence &amp; Sec OF LAW *</string>
+    <string name="offence_list">Choose Offence </string>
+    <string name="offence_list_selected">Details </string>
+    <string name="remove">Remove</string>
+    <string name="no">இல்லை</string>
+    <string name="choose_offence">Choose Offence</string>
+    <string name="ok">சரி</string>
+    <string name="puls">+</string>
+    <string name="amount">தொகை:</string>
+    <string name="total">Total :</string>
+    <string name="cost">0 Rs</string>
+    <string name="cancel">ரத்துசெய்</string>
+    <string name="pay_check">Payment</string>
+    <string name="payment_mode">கட்டண முறை</string>
+    <string name="pay_amount">Payment Amount</string>
+    <string name="pay_cash">CASH</string>
+    <string name="pay_cheque">CHEQUE</string>
+    <string name="addSalesMan">Add Sales Man</string>
+    <string name="cash_amount">தொகையை உள்ளிடவும்</string>
+    <string name="cheque_no">சரிபார்ப்பு எண்</string>
+    <string name="cheque_date">தேதி சரிபார்க்கவும்</string>
+    <string name="bank_no">Click here to Choose Bank Name</string>
+    <string name="bank_name">வங்கி பெயர்</string>
+    <string name="welcomePage">வரவேற்கிறோம் !</string>
+    <string name="login_successfully">வெற்றிகரமாக உள்நுழைய</string>
+    <string name="please_enter_username">தயவு செய்து பயனர் பெயரை உள்ளிடவும்</string>
+    <string name="please_enter_password">தயவு செய்து கடவுச்சொல்லை உள்ளிடவும்</string>
+    <string name="please_enter_conform_password">தயவுசெய்து கடவுச்சொல்லை உறுதிப்படுத்தவும்</string>
+    <string name="no_network">No Network Available. Please enter Manually.</string>
+    <string name="printing">Printing Successfully</string>
+    <string name="string_alert_bill">நீங்கள் நிச்சயமாக ரசிது அகற்ற விரும்புகிறீர்களா?</string>
+    <string name="string_alert_product">Are you sure want to remove the product</string>
+    <string name="string_alert_order">நீங்கள் நிச்சயமாக ஆர்டரை அகற்ற விரும்புகிறீர்களா?</string>
+    <string name="string_alert_payment">கட்டணத்தை நீக்க விரும்புகிறீர்களா?</string>
+    <string name="string_alert_invoice">நீங்கள் நிச்சயமாக விலைப்பட்டியல் அகற்ற விரும்புகிறீர்களா?</string>
+
+
+    <string name="submit">SUBMIT</string>
+    <string name="preview">Preview</string>
+    <string name="violator">Signature of the violator</string>
+
+    <string name="savePrint">Save &amp; PRINT</string>
+
+    <!-- Printer-->
+    <string name="t_bindok">Printer Initialized</string>
+    <string name="t_unbinding">Printer Initializing &#8230;</string>
+
+    <!-- ViewHistory-->
+    <string name="challanNo">ChallanNo :DEMO3R233422</string>
+    <string name="vehicleNo">VehicleNo : </string>
+    <string name="currentDate"> Date : 23 Feb 2018</string>
+    <string name="tnpolice">TN Police E-Challan Service</string>
+
+    <string name="customersign">Violator Signature </string>
+    <string name="officersign">Officer Signature</string>
+    <string name="signature"> Signature *</string>
+
+    <!-- Preview-->
+    <string name="previewChallanNo">Challan No : </string>
+    <string name="previewDateTime">DateTime : </string>
+    <string name="previewOfficerName">Issuing Officer : </string>
+    <string name="previewJurisdiction">PS Jurisdiction :  </string>
+    <string name="previewVehicleNo">Vehicle No :  </string>
+    <string name="previewVehicleName">Vehicle Name :  </string>
+    <string name="previewVehicleAddress">Vehicle Address : </string>
+    <string name="previewLicenceNo">Licence No :  </string>
+    <string name="previewLicenceName">Licence Name :  </string>
+    <string name="previewLicenceAddress">Licence Address : </string>
+    <string name="previewOffenceDetails">Details : </string>
+    <string name="previewSpotFine">Spot Fine Collected :  </string>
+    <string name="previewPaymentMode">Payment Mode : </string>
+    <string name="previewPayment">Fine Amount RS :  </string>
+    <string name="previewRemarks">Details : </string>
+    <string name="previewRemarksPhoneNo">Phone No : </string>
+    <string name="previewImpound">Impound : </string>
+    <string name="previewImpoundPlace">Impound Place : </string>
+    <!-- order preview-->
+    <string name="openbarget">(</string>
+    <string name="closebarget">)</string>
+
+    <!-- Font-->
+    <string name="plus">&#xf067;</string>
+    <string name="minus">&#xf068;</string>
+
+    <!-- Font-Family-->
+    <string name="roboto_regular">sans-serif</string>
+    // roboto regular
+    <string name="roboto_light">sans-serif-light</string>
+    // roboto light
+    <string name="roboto_black">sans-serif-condensed</string>
+    // roboto black
+    <string name="roboto_thin">sans-serif-thin</string>
+    // roboto thin (android 4.2)
+    <string name="roboto_medium">sans-serif-medium</string>
+    // roboto medium (android 5.0)
+
+    <string name="tempPara">wh5h89rtguhq35h0h095q99h5rg9htrrfhpjtopewpy3p9soeernerlnkffknlrgiwopbfe083t0h538urhg98qh</string>
+    <string name="take_Photo">Take Photo</string>
+    <string name="from_gallery">Choose from gallery</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="name">Sales man Name *</string>
+    <string name="leaderName">Leader Name *</string>
+    <string name="customerName">Customer Name *</string>
+    <string name="leadName">Lead Name *</string>
+    <string name="delivery_address_details">Delivery address</string>
+    <string name="managing_address_details">Managing address</string>
+    <string name="deleteAlertMember">Are you sure your want to delete this details?</string>
+    <string name="conformAddcustomer">Are you sure adding lead as customer? </string>
+    <string name="confirmation">Confirmation</string>
+    <string name="remove_all">All Device Details will be removed. Are Sure want to remove the Device ?</string>
+    <string name="hint_designation">designation</string>
+    <string name="hint_organization">organization</string>
+    <string name="hint_office_tel">Office Telephone</string>
+    <string name="digits_only">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ </string>
+    <string name="digits">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 </string>
+    <string name="digits_email">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@. </string>
+    <string name="digits_register">: ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 </string>
+    <string name="digits_percent">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789% </string>
+    <string name="level1">Level 1</string>
+    <string name="level2">Level 2</string>
+    <string name="level3">Level 3</string>
+    <string name="district">District</string>
+    <string name="route">Route</string>
+    <string name="district_no">Pleace enter district</string>
+    <string name="route_no">Pleace enter route</string>
+    <string name="route_alredy">route already exisict</string>
+    <string name="district_alredy">district already exisict</string>
+    <string name="googleMapAPIkey">AIzaSyAHjwbKjzirrruFKqHewUXe0wWqFAV8tfM</string>
+    <string name="cancel_bill">Cancel Bill</string>
+    <string name="replacement">மாற்றவும்</string>
+    <string name="returns">திரும்ப</string>
+    <string name="Order">ஆர்டர்</string>
+    <string name="crsales">Bills</string>
+    <string name="crpayment">Payment</string>
+    <string name="ledgerBal"> லெட்ஜர் சமநிலை</string>
+    <string name="lastRcpt">Last Rcpt :</string>
+    <string name="dt">dt :</string>
+    <string name="allBills">அனைத்து பில்கள்</string>
+    <string name="allOrders">அனைத்து ஆர்டர்களும்</string>
+    <string name="cancelBills">ரத்து செய்யப்பட்ட பில்கள்</string>
+    <string name="cancelOrders">ரத்து செய்யப்பட்ட ஆர்டர்கள்</string>
+    <string name="allPayment">அனைத்து பெமென்ட்</string>
+    <string name="cancelPayment">ரத்து செய்யப்பட்ட பெமென்ட்</string>
+    <string name="noBillOn">பில்கள் இல்லை</string>
+    <string name="noOrderOn">ஆர்டர்கள் இல்லை</string>
+    <string name="upload">Upload</string>
+    <string name="enterBillNumber">Enter Bill Number</string>
+    <string name="search">Search</string>
+    <string name="inventryData">Sync Inventory Data</string>
+    <string name="date">date :</string>
+    <string name="siNo">S.Id :</string>
+    <string name="sname">SName : </string>
+    <string name="m_name">Material_Name</string>
+    <string name="tqty">T.Qty</string>
+    <string name="sold">Sold</string>
+    <string name="repl">Repl</string>
+    <string name="bal">Bal</string>
+    <string name="rtype">R. Type</string>
+    <string name="retqty">Ret.Qty</string>
+    <string name="payreportamt">Amount</string>
+    <string name="payreportmode">Mode</string>
+    <string name="payreportname">C_Name</string>
+    <string name="rpclqty">Rpcl_Qty</string>
+    <string name="pendingQty">Pending_qty</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="receivedAmount">Received Amount</string>
+    <string name="proceedToPay">Proceed to pay</string>
+    <string name="type">Type</string>
+    <string name="add">Add</string>
+    <string name="replaceQty">Replace Qty</string>
+    <string name="generateBill">Generate Bill</string>
+    <string name="bill_date">Bill Date</string>
+    <string name="net_amount">Net Amount</string>
+    <string name="proceedToCancel">Proceed to cancel</string>
+    <string name="choose_Bill_Number">Choose bill number</string>
+    <string name="manualBillNo">Manual bill number</string>
+    <string name="product_search">Product search</string>
+    <string name="enterQuantity">Enter quantity</string>
+    <string name="enterQuantity1"> product quantity is exceeded</string>
+    <string name="Continue">தொடர</string>
+    <string-array name="selectRegion">
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+    </string-array>
+    <string-array name="selectPaymentMode">
+        <item>Cash</item>
+        <item>Cheque</item>
+    </string-array>
+    <string-array name="selectType">
+        <item>Damage</item>
+        <item>Expiry</item>
+        <item>Excess</item>
+    </string-array>
+
+    <string name="Rs">\u20B9</string>
+    <string name="sales">Sales</string>
+    <string name="order">ஆர்டர்</string>
+    <string name="profile">Profile</string>
+    <string name="totalBillValue">மொத்த மதிப்பு </string>
+    <string name="totalPayValue">மொத்த மதிப்பு : </string>
+    <string name="totalNoBill">மொத்த எண்ணிக்கை </string>
+    <string name="totalNoOrders">மொத்த எண்ணிக்கை: </string>
+    <string name="totalNoPay">மொத்த எண்ணிக்கை: </string>
+    <string name="dayStart">Day start</string>
+    <string name="dayEnd">Day end</string>
+    <string name="title_bill">பில்கள்</string>
+    <string name="title_new_bill">புதிய பில்கள்</string>
+    <string name="title_survey">கணக்கெடுப்பு</string>
+    <string name="lastBillDetail">கடைசி பில் விவரங்கள் :</string>
+    <string name="lastBillAmount">கடைசி பில் தொகை :</string>
+    <string name="lastBillNo">கடைசி பில் எண் :</string>
+    <string name="lastBillDate">கடைசி பில் தேதி :</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: SweetAlertDialog -->
+    <string name="add_product">தயாரிப்பு சேர்க்கவும்</string>
+    <string name="add_customer">வாடிக்கையாளரைத் தேர்வு செய்க</string>
+    <string name="choose_cus">வாடிக்கையாளரைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="no_product">No products found</string>
+    <string name="payment_customer">வாடிக்கையாளரைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="payment_cash">பணத் தொகையை உள்ளிடவும்</string>
+   <string name="choose_bank">தயவுசெய்து வங்கியைத் தேர்வுசெய்க</string>
+    <string name="cheque_bank">சரிபார்க்கும் தேதியை உள்ளிடவும்</string>
+    <string name="cheque_Amount">காசோலை தொகையை உள்ளிடவும்</string>
+    <string name="cheque_No">காசோலை எண்ணை உள்ளிடவும்</string>
+    <string name="payment_Mode">கட்டண பயன்முறையைத் தேர்வுசெய்க</string>
+<!--    <string name="finish_loading_tstart"> வெற்றிகரமாக பதிவிறக்கம் செய்யப்பட்டது</string>-->
+    <string name="finish_loading_tstart"> பயணம் வெற்றிகரமாக தொடங்கியது</string>
+    <string name="finish_loading_tend">பயண முடிவு வெற்றிகரமாக முடிந்தது</string>
+    <string name="return_added_success">Return Added Successfully</string>
+    <string name="replace_added_success">Replacement Added Successfully</string>
+    <string name="balance_qty">Balance Qty</string>
+    <string name="balance">இருப்பு</string>
+    <string name="phoneNo">தொலைபேசி எண்</string>
+    <string name="gstin">GST</string>
+
+    //payment preview
+    <string name="paymentdetails">Payment Details</string>
+    <string name="paymentdetamount">Paid Amount</string>
+    <string name="paymentdetdate">Date</string>
+    <string name="paymentdetpaidby">Paid By</string>
+    <string name="paymentdettime">Time</string>
+    <string name="paymentdetpaymethod">Payment Method</string>
+    <string name="paymentdetchequeno">Cheque No</string>
+    <string name="paymentdetchequeno1">CH.No:</string>
+    <string name="paymentdetchequedate">Cheque Date:</string>
+    <string name="paymentdetbankdet">Bank Details</string>
+
+    <string name="Search">தேடல்</string>
+    <string name="Bills_Preview">பில்கள் முன்னோட்டம்</string>
+    <string name="Choose_customer">வாடிக்கையாளரைத் தேர்வுசெய்க</string>
+
+    //bill preview
+    <string name="bill_Preview">பில்கள் முன்னோட்டம்</string>
+    <string name="qty">அளவு</string>
+    <string name="rate">விகிதம்</string>
+    <string name="Tax">வரி</string>
+    <string name="Net">நிகர</string>
+    <string name="Save">சேமிக்க</string>
+    <string name="pay">பெமென்ட்</string>
+    <string name="Customer_details">வாடிக்கையாளர் விவரங்கள்</string>
+    <string name="Banner">பேனர் விவரம்</string>
+    <string name="print">அச்சிடு</string>
+    <string name="Payment_Details_Added_Successfully">கட்டண விவரங்கள் வெற்றிகரமாக சேர்க்கப்பட்டன</string>
+
+
+    <string name="New_Order_Enquiry">புதிய ஆர்டர்</string>
+    <string name="No_Products_Available">தயாரிப்பு எதுவும் கிடைக்கவில்லை</string>
+    <string name="No_Customer_found">எந்த வாடிக்கையாளரும் கிடைக்கவில்லை</string>
+
+    <string name="Are_you_sure_want_to_End_trip">நீங்கள் நிச்சயமாக பயணத்தை முடிக்க விரும்புகிறீர்களா?</string>
+    <string name="Are_you_sure_want_to_start_trip">நீங்கள் நிச்சயமாக பயணத்தைத் தொடங்க விரும்புகிறீர்களா?</string>
+    <string name="Please_Check_your_internet_connection">உங்கள் இணைய இணைப்பை சரிபார்க்கவும்</string>
+
+    <string name="trip_Start">பயணத்தைத் தொடங்குங்கள்</string>
+    <string name="noInventory">இன்று சரக்கு இல்லை</string>
+    <string name="tripStarted">பயணம் ஏற்கனவே தொடங்கியது</string>
+    <string name="tripEndBfrLogout">வெளியேறுவதற்கு முன் பயணத்தை முடிக்கவும்</string>
+
+    //Reports
+    <string name="Reports">அறிக்கைகள்</string>
+    <string name="Day_start">நாள் தொடக்க</string>
+    <string name="Day_end">நாள் முடிவு</string>
+    <string name="Replace">பதிலாக</string>
+    <string name="Return">திரும்ப</string>
+    <string name="Trip">பயணம்</string>
+    <string name="Waves">அலைகள்</string>
+    <string name="No_payment">பெமென்ட் இல்லை</string>
+    <string name="Day_start_report">நாள் தொடக்க அறிக்கை</string>
+    <string name="Day_End_Report">நாள் முடிவு அறிக்கை</string>
+    <string name="Payment_Report">கட்டண அறிக்கை</string>
+    <string name="No_Order">ஆர்டர்கள் இல்லை</string>
+    <string name="Replace_Report">அறிக்கையை மாற்றவும்</string>
+    <string name="Return_Report">திரும்ப அறிக்கை</string>
+    <string name="Order_Report">ஆர்டர் அறிக்கை</string>
+    <string name="Trip_Report">பயண அறிக்கை</string>
+    <string name="Customer_Report">வாடிக்கையாளர் அறிக்கை</string>
+    <string name="please_Entry_Payment">நுழைவு பெமென்ட் செலுத்தவும்</string>
+    <string name="No_retrun">திரும்பவில்லை</string>
+    <string name="Translation">மொழி</string>
+    <string name="Language">மொழி</string>
+    <string name="kindly_connect_the_device">தயவுசெய்து சாதனத்தை இணைக்கவும்</string>
+    <string name="Sales_Saved_Successfully">விற்பனை வெற்றிகரமாக சேமிக்கப்பட்டது</string>
+    <string name="Payment_Preview">கட்டண முன்னோட்டம்</string>
+    <string name="new_payment">புதிய பெமென்ட்</string>
+    <string name="Select_the_date">தேதியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="invalid_login">தவறான புகுபதிவு</string>
+    <string name="share">பகிர்</string>
+    <string name="whatsapp">பகிரி</string>
+    <string name="mail">E-mail</string>
+    <string name="productDeveloped">&#169; SCOTO SYSTEC PVT LTD</string>
+    <string name="newcompanyReg">வைசலேஸுக்கு புதியது</string>
+    <string name="welcomeSymb">வரவேற்பு..!</string>
+    <string name="enterCompanyId">நிறுவனத்தின் ஐடியை உள்ளிடவும்</string>
+    <string name="enterOtp">Otp ஐ உள்ளிடவும்</string>
+    <string name="register">பதிவு.</string>
+</resources>

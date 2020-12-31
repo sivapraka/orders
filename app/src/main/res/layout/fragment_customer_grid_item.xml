@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="@dimen/cardElevation"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCustomerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/imageViewCustomerImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:id="@+id/textViewCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewCustomerImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Bosch "
+            android:textStyle="bold"
+            android:textColor="@color/newColorPrimary"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/textViewCustomerCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCustomerName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="09A786875"
+            android:textStyle="bold"
+            android:textColor="@color/centerColor"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/textViewContactNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCustomerCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="89786875"
+            android:textColor="@color/centerColor"
+            android:textSize="@dimen/space_11" />
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewContactNo"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginTop="@dimen/space_3"
+            android:text="89786875"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textColor="@color/centerColor"
+            android:textSize="@dimen/space_10" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

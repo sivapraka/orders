@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@+id/buttonPaymentSave">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_5">
+
+            <TextView
+                android:id="@+id/textViewCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/space_10"
+                android:fontFamily="@string/roboto_regular"
+                android:text="@string/cus_name"
+                android:textColor="@color/newColorPrimarybottom"
+                android:textSize="@dimen/textMedium"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCustomer"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_search_small"
+                android:enabled="true"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:hint="@string/cus_name"
+                android:imeOptions="actionNext"
+                android:inputType="text|textFilter|textAutoComplete|textAutoCorrect|textPersonName"
+                android:maxLength="@integer/max_length_large"
+                android:maxLines="@integer/max_lines_normal"
+                android:textColorHint="@color/LightGray"
+                android:textSize="@dimen/textMedium"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/textViewBillAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoCompleteTextViewCustomerName"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/space_10"
+                android:fontFamily="@string/roboto_regular"
+                android:text="@string/ledgerBal"
+                android:textColor="@color/newColorPrimarybottom"
+                android:textSize="@dimen/textMedium"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewBillAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewBillAmount"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:hint="@string/ledgerBal"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="@integer/max_length_phone"
+                android:maxLines="@integer/max_lines_normal"
+                android:textColorHint="@color/LightGray"
+                android:textSize="@dimen/textMedium" />
+            <RelativeLayout
+                android:id="@+id/lastBillDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoCompleteTextViewBillAmount">
+            <TextView
+                android:id="@+id/textViewLastBillAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/space_10"
+                android:fontFamily="@string/roboto_regular"
+                android:text="@string/lastBillDetail"
+                android:textColor="@color/newColorPrimarybottom"
+                android:textSize="@dimen/textMedium"
+                android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/linearLayoutLastManualBillNo"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/textViewLastBillAmount"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/manualBillNo"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewLastManualBillNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/manualBillNo"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="@integer/max_length_phone"
+                    android:maxLines="@integer/max_lines_normal"
+
+                    android:textColorHint="@color/LightGray"
+                    android:textSize="@dimen/textMedium" />
+                </LinearLayout>
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewLastBillDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lastBillDate"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:clickable="false"
+                    android:focusableInTouchMode="true"
+                    android:layout_alignParentRight="true"
+                    android:maxLength="@integer/max_length_phone"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:textColorHint="@color/LightGray"
+                    android:textSize="@dimen/textMedium"  />
+                <LinearLayout
+                    android:id="@+id/linearLayoutLastBillNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayoutLastManualBillNo">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bill_no"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textMedium" />
+
+                    <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewLastBillNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/bill_no"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:focusable="false"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusableInTouchMode="true"
+                android:maxLength="@integer/max_length_phone"
+                android:maxLines="@integer/max_lines_normal"
+
+                android:textColorHint="@color/LightGray"
+                android:textSize="@dimen/textMedium" />
+                </LinearLayout>
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewLastBillAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:hint="@string/lastBillAmount"
+                android:imeOptions="actionNext"
+                android:layout_below="@+id/linearLayoutLastManualBillNo"
+                android:inputType="number"
+                android:maxLength="@integer/max_length_phone"
+                android:maxLines="@integer/max_lines_normal"
+                android:textColorHint="@color/LightGray"
+                android:textSize="@dimen/textMedium" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/textViewPaymentModeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastBillDetails"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/space_10"
+                android:fontFamily="@string/roboto_regular"
+                android:text="@string/payment_mode"
+                android:textColor="@color/newColorPrimarybottom"
+                android:textSize="@dimen/textMedium"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPaymentModeTitle">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/radioButtonCash"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonCash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/smokyBlue"
+                        android:text="@string/pay_cash" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonCheque"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/smokyBlue"
+                        android:text="@string/pay_cheque" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageViewcashorcheque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPaymentModeTitle"
+                android:layout_alignParentEnd="true"
+                android:layout_toLeftOf="@+id/relativeLayoutPayment"
+                app:srcCompat="@drawable/ic_cash" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayoutPayment"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/textViewPaymentamtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/layout_marginLeft_small"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:fontFamily="@string/roboto_regular"
+                    android:text="@string/cash_amount"
+                    android:textColor="@color/newColorPrimarybottom"
+                    android:textSize="@dimen/textMedium"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewpaymentAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewPaymentamtTitle"
+                    android:hint="@string/cash_amount"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="@integer/max_length_phone"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:textColorHint="@color/LightGray"
+                    android:textSize="@dimen/textMedium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutCheque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayoutCash"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewchequenoTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/layout_marginLeft_small"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:fontFamily="@string/roboto_regular"
+                    android:text="@string/paymentdetchequeno1"
+                    android:textColor="@color/newColorPrimarybottom"
+                    android:textSize="@dimen/textMedium"
+                    android:textStyle="bold" />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewChequeNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewchequenoTitle"
+                    android:hint="@string/cheque_no"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:textSize="@dimen/textMedium"
+                    android:textColorHint="@color/LightGray" />
+
+                <TextView
+                    android:id="@+id/textViewchequedateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/layout_marginLeft_small"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_toLeftOf="@+id/textViewchequenoTitle"
+                    android:fontFamily="@string/roboto_regular"
+                    android:text="@string/paymentdetchequedate"
+                    android:textColor="@color/newColorPrimarybottom"
+                    android:textSize="@dimen/textMedium"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewChequeDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewchequedateTitle"
+                    android:layout_alignParentRight="true"
+                    android:focusable="false"
+                    android:hint="@string/cheque_date"
+                    android:textAlignment="textEnd"
+                    android:imeOptions="actionNext"
+                    android:inputType="textAutoComplete|textAutoCorrect|text"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:textSize="@dimen/textMedium"
+                    android:textColorHint="@color/LightGray" />
+
+                <TextView
+                    android:id="@+id/textViewbanknameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoCompleteTextViewChequeNo"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/layout_marginLeft_small"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:fontFamily="@string/roboto_regular"
+                    android:text="@string/paymentdetbankdet"
+                    android:textColor="@color/newColorPrimarybottom"
+                    android:textSize="@dimen/textMedium"
+                    android:textStyle="bold" />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewbanknameTitle"
+                    android:hint="@string/bank_name"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoComplete|textAutoCorrect|text"
+                    android:maxLength="@integer/max_length_large"
+                    android:maxLines="@integer/max_lines_normal"
+                    android:textSize="@dimen/textMedium"
+                    android:textColorHint="@color/LightGray" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/buttonPaymentSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:minHeight="@dimen/buttonMinHeight"
+        android:text="@string/Save"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textLarge"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>

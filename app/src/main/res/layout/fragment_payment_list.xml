@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorNormalBackground"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checkedButton="@+id/radioButtonAllBills"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <RadioButton
+            android:id="@+id/radioButtonAllBills"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:minHeight="@dimen/space_40"
+            android:textColor="@color/colorWhite"
+            android:text="@string/allPayment" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCancelBills"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="50"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/cancelPayment" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCustomDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_5"
+        android:visibility="visible"
+        android:layout_below="@id/radioGroup"
+        android:minHeight="@dimen/space_30">
+
+        <TextView
+            android:id="@+id/ledgerbalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/space_30"
+            android:text="@string/ledgerBal"
+            android:gravity="center"
+            android:textColor="@color/newColorPrimary"
+            android:textSize="@dimen/space_16"
+            style="@style/brandon_bld"
+            android:minHeight="@dimen/space_30"/>
+
+        <TextView
+            android:id="@+id/textViewPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/pay_now"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/ledgerbalance"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/space_10"
+            android:background="@color/blue"
+            android:padding="@dimen/space_5"/>
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/radioGroup">
+
+        <TextView
+            android:id="@+id/textViewBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="@string/totalNoPay"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+        <TextView
+            android:id="@+id/textViewTotalBills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:text="@string/noBillOn"
+            android:minWidth="@dimen/space_30"
+            android:background="@color/colorGreen"
+            android:layout_toEndOf="@id/textViewBill"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+        <TextView
+            android:id="@+id/textViewBillValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/totalPayValue"
+            android:layout_toLeftOf="@id/textViewTotalBillValue"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+        <TextView
+            android:id="@+id/textViewTotalBillValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_12"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/noBillOn"
+            android:background="@color/colorGreen"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:padding="@dimen/space_5"/>
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeReferesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutCustomDetails">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSales"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/salesAdd"
+            android:layout_marginBottom="@dimen/space80"
+            android:layout_marginTop="@dimen/space_4"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/PaytextViewNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/space_12"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="@string/No_payment"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="@dimen/space_10"
+        android:padding="@dimen/space_5"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/salesAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:visibility="gone"
+        app:backgroundTint="@color/newColorPrimary"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/add" />
+
+</RelativeLayout>

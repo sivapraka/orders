@@ -1,0 +1,75 @@
+package com.demo.orders.util;
+
+public class Utils {
+
+    public static final String KEY_SPACE = "";
+    public static final String feedbackUrl = "api/Customer/get_feedbacklist";
+    public static final String feedbackInsertUrl = "api/Customer/customerfeedback_insert";
+    public static final String loginUrl = "api/Customer/login";
+    public static final String verifyOTP = "api/Customer/verify_otp";
+    public static final String sendOTP = "api/Customer/user_check";
+    public static final String setmpin = "api/Customer/set_mpin";
+    public static final String KEY_MENU = "api/customer/mobile_menu";
+    public static final String KEY_bils = "api/customer/bills_list";
+    public static final String KEY_bill_details = "api/customer/bills_details";
+    public static final String checkCompnay = "api/Company/check/company_id";
+    public static final String validUserUrl = "api/Company/valid_user";
+    public static final String inserCompanytUrl = "api/Company/registration";
+    public static final String KEY_INVOICE = "api/mobileapi/mobile_payment_details";
+    public static final String KEY_ORDERS = "api/customer/orders?";
+    public static final String KEY_ORDERS_list = "api/customer/orders_list?";
+    public static final String KEY_PAYMENT = "api/customer/payment?";
+    public static final String KEY_BANNER = "api/customer/banners?";
+    public static final String paymentTally = "api/Customer/payment_tally";
+    public static final String customersurvey_insert = "api/customer/customersurvey_insert";
+    public static final String get_activesurveylist = "api/customer/get_activesurveylist";
+    public static final String get_customer_selected_surveylist = "api/customer/get_customer_selected_surveylist";
+    public static final String customer_cutoff_time = "api/customer/get_customerorder_cutofftime";
+
+    public static final String get_notificationcount = "api/customer/get_notificationcount";
+    public static final String get_notificationmessage = "api/customer/get_notificationmessage";
+    public static final String get_mobileTrackin = "api/Customer/mobile_tracking";
+    public static final String logout = "api/Customer/logout";
+    public static final String get_completedsurvey_details = "api/customer/get_completedsurvey_details";
+    public static final String get_scheme = "api/request/scheme?format=json";
+    public static final String get_customer_message = "api/mobileapi/get_customer_message";
+    public static final String get_customer_active_message = "api/mobileapi/get_customer_active_message";
+    public static final String get_orders_by_id = "api/customer/get_orders_by_id";
+    public static String KEY_BASEURL = "http://wizesales.scoto.in/vijay/";
+    public static String adminUrl = "https://admin.wizesales.com/";
+    public static String CUSTOMER_ACCOUNT = "api/customer/accounts";
+    public static String KEY_SUPERVISOR = "api/request/supervisor?format=json";
+    public static String KEY_PRINTER = "api/request/printer?format=json";
+    public static String KEY_MATERIAL = "api/request/material?format=json";
+    public static String KEY_PRICE = "api/request/price?format=json";
+    public static String KEY_SCHEME = "api/request/scheme?format=json";
+    public static String KEY_DISCOUNT = "api/request/discount?format=json";
+    public static String KEY_BILL_HISTORY = "api/request/billheader?format=json";
+    public static String KEY_CUSTOMER_PAYMENT = "api/request/customerpayment?format=json";
+    public static String KEY_CUSTOMER_ACCOUNT = "api/request/customeraccounts";
+    public static String KEY_REPLACEMENT_DETAILS = "api/request/replacementdetails";
+    public static String KEY_CUSTOMER = "api/Customer/users_new/";
+    public static String KEY_INVENTORY = "api/request/inventory";
+    public static String KEY_LOGIN = "api/supervisor/login";
+    public static String KEY_UPDATE_INVENTORY = "api/mobileapi/updateinventory";
+    public static String KEY_CUSTOMER_ORDER_ENQUIRY = "api/mobileapi/customer_order_enquiry";
+    public static String KEY_RETURN_DAMAGE = "api/mobileapi/returnsdamage";
+    public static String KEY_REPLACEMENT_UPLOAD = "api/mobileapi/replacementdetails";
+    public static String KEY_CUSTOMER_BILL = "api/mobileapi/customerbills_new";
+    //    public static String KEY_PAYMENT="api/mobileapi/payment";
+    public static String KEY_TRANSACTION = "api/mobileapi/transaction";
+    public static String KEY_PRODUCT_DETAILS = "api/mobileapi/billproductdetails";
+    public static String KEY_DELETE_CUSTOMER_ORDER = "api/mobileapi/delete_customer_order_enquiry";
+    public static String KEY_START_TRIP = "api/mobileapi/start_trip";
+    public static String KEY_END_TRIP = "api/mobileapi/end_trip";
+    public static String KEY_SLASH = "/";
+    public static String KEY_EQUAL = "=";
+    public static String KEY_CUSTOMER_PROFILE_UPDATE = "api/Customer/customer_update";
+    public static String KEY_INVOICE_UP = "api/mobileapi/billing_details";
+    public static String KEY_REVIEW = "api/mobileapi/customer_reviews";
+    public static String KEY_GETREVIEW = "api/mobileapi/get_customer_leave";
+    public static String KEY_LOCATION_UPDATE = "api/mobileapi/salesmanlocation";
+    public static String KEY_IS_INVENTORY = "api/mobileapi/inventory";
+    public static String KEY_CURRENCY = "api/mobileapi/currency_details?";
+
+}

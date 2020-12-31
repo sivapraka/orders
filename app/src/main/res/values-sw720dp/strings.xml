@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">WS CUSSTOMERS</string>
+
+
+    <string name="user_name">User Name *</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_ok">OK</string>
+    <string name="action_verify">Verify</string>
+    <string name="customer_name">Customer  Name *</string>
+    <string name="product_name">Product Name *</string>
+    <string name="productName">product name</string>
+    <string name="price">price</string>
+    <string name="quantity">Qty</string>
+    <string name="sub_total">Total</string>
+    <string name="temp">Temp</string>
+    <!-- ... is replaced by &#8230;-->
+    <string name="printer_binding">Service binding &#8230;</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_password">Password *</string>
+    <string name="hint_conform_password">Conform Password </string>
+    <string name="male">Male</string>
+    <string name="female">Fe-Male</string>
+    <string name="btn_sign_up">PRINT</string>
+    <string name="btn_link_login">Get SIGN</string>
+    <string name="hint_dob">D.O.B</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="edit">Edit</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_new_challan">New Challan</string>
+    <string name="nav_item_view_history">View History</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_new_challan</item>
+        <item>@string/nav_item_view_history</item>
+    </string-array>
+    <string name="title_viewHistory">View History</string>
+    <string name="title_friends">New Challan</string>
+    <string name="title_home">Home</string>
+
+    <!-- NEW Challan-->
+    <string name="challan_details">Challan  Details:</string>
+    <string name="challanno">Challan No</string>
+    <string name="current_date">Current Date</string>
+    <string name="officer">Officer Name *</string>
+    <string name="jurisdiction">Jurisdiction *</string>
+
+    <string name="vehicle_details">Vehicle Details *</string>
+    <string name="vehicleno">Vehicle No *</string>
+    <string name="vehicle_name">Vehicle Name *</string>
+    <string name="vehicle_address">Vehicle Address *</string>
+
+    <string name="driver_details">Driver  Details *</string>
+    <string name="licenseno">License No *</string>
+    <string name="license_name">License Name *</string>
+    <string name="license_address">License  Address *</string>
+
+    <string name="action_details">Action  Taken *</string>
+    <string name="spot_fine">Spot Fine Collected *</string>
+    <string name="payment"> Choose Payment Mode * </string>
+    <string name="fine_amount">Amount in \u20A8 *</string>
+    <string name="cash">CASH</string>
+    <string name="unpaid">UNPAID</string>
+    <string name="court">COURT</string>
+    <string name="remarks_details">Remarks Details *</string>
+    <string name="remarks">Remarks *</string>
+    <string name="phoneno">Phone No *</string>
+    <string name="impound_details">Impound Details *</string>
+    <string name="impound">Impound *</string>
+    <string name="impound_location">Impound  Location *</string>
+    <string name="offence_details">Offence &amp; Sec OF LAW *</string>
+    <string name="offence_list">Choose Offence </string>
+    <string name="offence_list_selected">Details </string>
+    <string name="remove">Remove</string>
+    <string name="no">No</string>
+    <string name="choose_offence">Choose Offence</string>
+    <string name="ok">OK</string>
+    <string name="bill_amount">\u20A8</string>
+    <string name="total">Total</string>
+    <string name="cost">0 Rs</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="no_network">No Network Available. Please enter Manually.</string>
+    <string name="printing">Printing Successfully</string>
+
+    <string name="submit">SUBMIT</string>
+    <string name="preview">Preview</string>
+    <string name="violator">Signature of the violator</string>
+    <string name="Save">Save</string>
+    <string name="savePrint">Save &amp; PRINT</string>
+    <string name="next">next</string>
+
+    <!-- Printer-->
+    <string name="t_bindok">Printer Initialized</string>
+    <string name="t_unbinding">Printer Initializing &#8230;</string>
+
+    <!-- ViewHistory-->
+    <string name="challanNo">ChallanNo :DEMO3R233422</string>
+    <string name="vehicleNo">VehicleNo : TN 33 XZ 34434</string>
+    <string name="currentDate"> Date : 23 Feb 2018</string>
+    <string name="tnpolice">TN Police E-Challan Service</string>
+
+    <string name="customersign">Violator Signature </string>
+    <string name="officersign">Officer Signature</string>
+    <string name="signature"> Signature *</string>
+
+    <!-- Preview-->
+    <string name="previewChallanNo">Challan No : </string>
+    <string name="previewDateTime">DateTime : </string>
+    <string name="previewOfficerName">Issuing Officer : </string>
+    <string name="previewJurisdiction">PS Jurisdiction :  </string>
+    <string name="previewVehicleNo">Vehicle No :  </string>
+    <string name="previewVehicleName">Vehicle Name :  </string>
+    <string name="previewVehicleAddress">Vehicle Address : </string>
+    <string name="previewLicenceNo">Licence No :  </string>
+    <string name="previewLicenceName">Licence Name :  </string>
+    <string name="previewLicenceAddress">Licence Address : </string>
+    <string name="previewOffenceDetails">Details : </string>
+    <string name="previewSpotFine">Spot Fine Collected :  </string>
+    <string name="previewPaymentMode">Payment Mode : </string>
+    <string name="previewPayment">Fine Amount RS :  </string>
+    <string name="previewRemarks">Details : </string>
+    <string name="previewRemarksPhoneNo">Phone No : </string>
+    <string name="previewImpound">Impound : </string>
+    <string name="previewImpoundPlace">Impound Place : </string>
+
+
+    <!-- Font-Family-->
+    <string name="roboto_regular">sans-serif</string>
+    // roboto regular
+    <string name="roboto_light">sans-serif-light</string>
+    // roboto light
+    <string name="roboto_black">sans-serif-condensed</string>
+    // roboto black
+    <string name="roboto_thin">sans-serif-thin</string>
+    // roboto thin (android 4.2)
+    <string name="roboto_medium">sans-serif-medium</string>
+    // roboto medium (android 5.0)
+
+    <string name="tempPara">wh5h89\nrtguhq35h0h095q99h5\nrg9hte083t0h538\nurhg98qh</string>
+    <string name="take_Photo">Take Photo</string>
+    <string name="from_gallery">Choose from gallery</string>
+    <string name="deleteAlertMember">Are you sure your want to delete this details?</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="remove_all">All Device Details will be removed. Are Sure want to remove the Device ?</string>
+    <string name="hint_designation">designation</string>
+    <string name="hint_organization">organization</string>
+    <string name="hint_office_tel">Office Telephone</string>
+    <string name="level1">Level 1</string>
+    <string name="level2">Level 2</string>
+    <string name="level3">Level 3</string>
+    <string name="cancel_bill">Cancel Bill</string>
+    <string name="replacement">Replacement</string>
+    <string name="returns">Return</string>
+    <string name="ledgerBal">Ledger Bal :</string>
+    <string name="lastRcpt">Last Rcpt :</string>
+    <string name="dt">dt :</string>
+    <string name="share">Share</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="mail">E-mail</string>
+    <string name="productDeveloped">&#169; SCOTO SYSTEC PVT LTD</string>
+    <string name="newcompanyReg">New to Wizesales</string>
+    <string name="welcomeSymb">Welcome..!</string>
+    <string name="enterCompanyId">Enter Company ID</string>
+    <string name="enterOtp">Enter OTP</string>
+    <string name="register">Register.</string>
+</resources>

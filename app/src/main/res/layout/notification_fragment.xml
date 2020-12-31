@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNormalBackground">
+
+    <RadioGroup
+        android:id="@+id/notifymessageRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/newColorPrimary"
+        android:checkedButton="@+id/notifiationRadioButton"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="100">
+
+        <RadioButton
+            android:id="@+id/notifiationRadioButton"
+            style="@style/Radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/title_notification"
+            android:textColor="@color/colorWhite" />
+
+        <RadioButton
+            android:id="@+id/messageRadioButton"
+            style="@style/Radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/message"
+            android:textColor="@color/colorWhite" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/tabLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/space_40"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space2"
+        android:visibility="visible"
+        android:weightSum="@integer/int_100">
+
+        <TextView
+            android:id="@+id/notifiationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="@integer/int_50"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/title_notification"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="@integer/int_50"
+            android:gravity="center"
+            android:minHeight="@dimen/space_40"
+            android:text="@string/message"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeReferesh"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLinearLayout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/survive_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/survey_item" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="No Notification"
+        android:visibility="gone" />
+</RelativeLayout>

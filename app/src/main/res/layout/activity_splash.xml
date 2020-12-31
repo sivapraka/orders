@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/ic_ws_flash_screen"
+    tools:context="com.demo.orders.activity.SplashActivity">
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/popupscreenlogo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:text="@string/app_name"/>
+    <TextView
+        android:id="@+id/textViewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash"
+        android:layout_marginTop="@dimen/space_20"
+        android:gravity="center"
+        android:text="@string/productDeveloped"
+        android:textColor="@color/logoBlue"
+        android:textSize="@dimen/space_12"
+        android:textStyle="bold"
+        tools:ignore="UnknownId" />
+
+</RelativeLayout>

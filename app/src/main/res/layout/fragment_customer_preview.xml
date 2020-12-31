@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/space_20"
+        android:paddingRight="@dimen/space_20"
+        android:background="@color/colorWhite"
+        android:paddingTop="@dimen/space_20">
+
+    <ImageView
+        android:id="@+id/customerImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:minWidth="@dimen/space_80"
+        android:minHeight="@dimen/space_80"
+        app:srcCompat="@drawable/profile"/>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/customerImg"
+        android:layout_alignBottom="@+id/customerImg"
+        android:layout_marginRight="-5dp"
+        android:layout_marginBottom="-6dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_circle1"
+        app:srcCompat="@drawable/ic_photo_camera_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textViewCustomerCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/customerImg"
+        android:hint="@string/customer_code"
+        android:textColor="@color/text_color"
+        android:text="@string/customer_code"
+        style="@style/brandon_med"
+        android:gravity="center"
+        android:textSize="@dimen/space_18"
+        android:layout_marginTop="@dimen/space_6"/>
+
+    <TextView
+        android:id="@+id/textViewCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewCustomerCode"
+        android:gravity="center"
+        android:textSize="@dimen/space_18"
+        style="@style/brandon_bld"
+        android:text="@string/message"
+        android:textColor="@color/text_blue_color" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLevel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCustomerName"
+        android:weightSum="100"
+        android:layout_marginTop="@dimen/space_42"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPhoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/space_14"
+                style="@style/brandon_reg"
+                android:textColor="@color/textHintColor"
+                android:text="@string/phoneNo"/>
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/space_16"
+                style="@style/brandon_med"
+                android:textColor="@color/text_blue_color"
+                android:text="" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutGst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutPhoneNum"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/space_14"
+                style="@style/brandon_reg"
+                android:textColor="@color/textHintColor"
+                android:text="@string/gstin"/>
+
+            <TextView
+                android:id="@+id/textViewGstin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/space_16"
+                style="@style/brandon_med"
+                android:text="" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/color_light_gray"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_below="@id/linearLayoutLevel1"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="@dimen/space_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_address"
+            android:textSize="@dimen/space_14"
+            style="@style/brandon_reg"
+            android:textColor="@color/textHintColor" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_blue_color"
+            android:textSize="@dimen/space_16"
+            style="@style/brandon_med"
+            android:text="" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/color_light_gray"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_below="@id/linearLayoutEmail"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:layout_marginTop="@dimen/space_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_details"
+            android:textSize="@dimen/space_14"
+            style="@style/brandon_reg"
+            android:textColor="@color/textHintColor"/>
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_blue_color"
+            android:textSize="@dimen/space_16"
+            style="@style/brandon_med" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/color_light_gray"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_below="@id/linearLayoutAddress"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newColorPrimary"
+        android:minHeight="@dimen/space_40"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="@dimen/space_16"
+        android:visibility="gone"
+        android:textAllCaps="true"
+        android:text="@string/update"/>
+
+</RelativeLayout>
